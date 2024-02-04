@@ -25,11 +25,13 @@
       <div class="imgh">
         <img src="Assets/images/logo/ohmyfood.png" alt="titre" />
       </div>
-      <div class="location">
-        <i class="fa-solid fa-location-dot"></i>
-        <!-- C'est pas un input dans une div -->
-        <p>Paris, Belleville</p>
-      </div>
+        <form class="location" method="get" action="#">
+          <i class="fa-solid fa-location-dot"></i>
+          <p>
+            <label for="city"></label>
+            <input type="text" name="city" id="city" placeholder="Paris, Belleville" size="20" maxlength="20">
+          </p>
+        </form>
     </header>
     <main>
       <div class="firstparty">
@@ -40,41 +42,43 @@
         <a href="#restaurantsection">Explorer nos restaurant</a>
       </div>
       <nav class="fonct">
-          <h1>Fonctionnement</h1>
-          <div class="fonct__bal1">
-          <button>1</button>
+        <h2>Fonctionnement</h2>
+        <div class="fonct__bal1">
           <a>
-            <i class="fa-solid fa-mobile-screen-button"></i> <p>Choisissez un
-            restaurant</p>
+            <i class="fa-solid fa-mobile-screen-button"></i>
+            <p>Choisissez un restaurant</p>
           </a>
-            </div>
-            <div class="fonct__bal2">
-            <button>2</button>
-            <a>
-              <i class="fa-solid fa-list-ul"></i> <p>Composez votre menu</p>
-            </a>
-            </div>
-            <div class="fonct__bal3">
-              <button>3</button>
-              <a>
-              <i class="fa-solid fa-store"></i> <p>Dégustez au restaurant</p>
-              </a>
-              </div>
+          <button>1</button>
+        </div>
+        <div class="fonct__bal2">
+          <a>
+            <i class="fa-solid fa-list-ul"></i>
+            <p>Composez votre menu</p>
+          </a>
+          <button>2</button>
+        </div>
+        <div class="fonct__bal3">
+          <a>
+            <i class="fa-solid fa-store"></i>
+            <p>Dégustez au restaurant</p>
+          </a>
+          <button>3</button>
+        </div>
       </nav>
       <section class="restaurantsection" id="restaurantsection">
-        <h1>Restaurants</h1>
-          <div class="resto">
-            <article>
-                <img
-                src="Assets/images/restaurants/jay-wennington-N_Y88TWmGwA-unsplash.jpg"
-                alt="Assiette de présentation de la palette du goût"
-                />
-                <p class="new">Nouveau</p>
-                <h2>La palette du goût</h2>
-                <p>Ménilmontant</p>
-              <i class="fa-regular fa-heart"></i>
-            </article>
-        <!-- <article>
+        <h2>Restaurants</h2>
+        <div class="resto">
+          <article>
+            <img
+              src="Assets/images/restaurants/jay-wennington-N_Y88TWmGwA-unsplash.jpg"
+              alt="Assiette de présentation de la palette du goût"
+            />
+            <p class="new">Nouveau</p>
+            <h2>La palette du goût</h2>
+            <p>Ménilmontant</p>
+            <i class="fa-regular fa-heart"></i>
+          </article>
+          <!-- <article>
               <div class="pnew">
           <img
           src="Assets/restaurants/stil-u2Lp8tXIcjw-unsplash.jpg"
@@ -110,7 +114,7 @@
           </div>
           <i class="fa-regular fa-heart"></i>
         </article> -->
-      </div>
+        </div>
       </section>
     </main>
     <!-- <footer>

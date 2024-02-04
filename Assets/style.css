@@ -8,8 +8,9 @@ body {
     height: 113px;
   }
   header .imgh {
+    z-index: 1;
     height: 63px;
-    box-shadow: 0px 2px 4px 0px rgba(0, 0, 0, 0.15);
+    box-shadow: 0px 2px 4px 0px rgba(0, 0, 0, 0.1490196078);
     display: flex;
     justify-content: center;
     background-color: white;
@@ -21,17 +22,24 @@ body {
     top: 14px;
   }
   header .location {
+    z-index: 2;
     display: flex;
     align-items: center;
     justify-content: center;
     gap: 17px;
-    position: sticky;
+    position: relative;
     height: 50px;
-    top: 62.5px;
+    top: 0.5px;
     left: -0.5px;
     width: 100%;
     background: #EAEAEA;
-    box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
+    box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.2509803922);
+  }
+  header form input {
+    text-align: center;
+    border: none;
+    background-color: #EAEAEA;
+    width: 109px;
   }
   .firstparty {
     display: flex;
@@ -82,7 +90,8 @@ body {
     display: flex;
     flex-direction: column;
   }
-  .fonct h1 {
+  .fonct h2 {
+    font-weight: 700;
     font-size: 24px;
     position: absolute;
     width: 100%;
@@ -96,20 +105,60 @@ body {
     width: 335px;
     height: 72.38px;
   }
+  .fonct div button {
+    position: absolute;
+    left: 20px;
+    top: 26.68px;
+    border-radius: 50%;
+    color: white;
+    background-color: #9356DC;
+    border: none;
+    font-size: 14px;
+    font-weight: 500;
+    line-height: 17px;
+    width: 24px;
+    height: 24px;
+  }
   .fonct a {
     position: absolute;
     left: 32.51px;
-    display: flex;
     width: 322.49px;
     height: 72.38px;
     border-radius: 20px;
     background: #F6F6F6;
     box-shadow: 0px 4px 15px 0px rgba(0, 0, 0, 0.1490196078);
   }
-  .fonct p {
+  .fonct a i {
+    color: #7E7E7E;
+  }
+  .fonct a i:hover {
+    color: #9356DC;
+  }
+  .fonct a i.fa-solid.fa-mobile-screen-button {
+    position: absolute;
+    left: 45px;
+    top: 24.54px;
+    font-size: 19px;
+  }
+  .fonct a i.fa-solid.fa-list-ul {
+    position: absolute;
+    left: 47px;
+    top: 27.91px;
+  }
+  .fonct a i.fa-solid.fa-store {
+    position: absolute;
+    left: 48px;
+    top: 26.67px;
+    font-size: 18px;
+  }
+  .fonct a p {
     font-size: 16px;
     font-weight: 500;
     height: 15.67px;
+    position: absolute;
+    left: 86px;
+    top: 28.59px;
+    color: #000000;
   }
   .fonct__bal1 {
     top: 105px;
@@ -120,7 +169,7 @@ body {
   .fonct__bal3 {
     top: 299.62px;
   }
-  .restaurantsection h1 {
+  .restaurantsection h2 {
     position: absolute;
     top: 894px;
     left: 20px;
