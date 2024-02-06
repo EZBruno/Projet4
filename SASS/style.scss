@@ -241,11 +241,17 @@ body {
                 flex-direction: column;
                 background-color: white;
 
-            
+            // REFAIRE LES REDIMENTIONS OBJECTIFS FIT ETC
             img{
                 width: 100%;
                 height: calc(231px - 57px);
                 border-radius: 15px 15px 0 0;
+                object-fit: cover;
+                object-position: 50% 100%;
+
+                &.second {
+                    object-position: 50% 61%;
+                }
             }
 
             &--new {
