@@ -2,6 +2,7 @@
 <html lang="fr">
   <head>
     <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
@@ -15,85 +16,110 @@
       crossorigin="anonymous"
       referrerpolicy="no-referrer"
     />
-    <link rel="stylesheet" href="Assets/style.css" />
-    <title>ohmyfood</title>
+    <link rel="stylesheet" href="../Assets/normaliz.css" />
+    <link
+      rel="stylesheet"
+      href="../Assets/menu768/menu.css"
+    />
+    <title>Le délice des sens</title>
   </head>
   <body>
     <header>
-      <button><i class="fa-solid fa-arrow-left"></i></button>
-      <img src="Assets/images/logo/ohmyfood.png" alt="titre" />
+        <button><i class="fa-solid fa-arrow-left"></i></button>
+        <img src="../Assets/images/logo/ohmyfood.png" alt="titre" />
+      <!-- <img class="menuimg" src="../Assets/images/restaurants/louis-hansel-shotsoflouis-qNBGVyOCY8Q-unsplash.jpg" alt="Image du menu"> -->
     </header>
     <main>
-      <img
-        src="Assets/images/restaurants/louis-hansel-shotsoflouis-qNBGVyOCY8Q-unsplash.jpg"
-        alt="Assiette de présentation de Le délice des sens"
-      />
-      <h1>Le délice des sens</h1>
-      <i class="fa-regular fa-heart"></i>
-      <article>
+      <div class="maintitle">
+        <h1>Le délice des sens<i class="fa-regular fa-heart"></i>
+      </div>
+      <article class="art">
         <h2>ENTRÉES</h2>
-        <div>
+        <div class="art__ent">
+          <div class="art__ent--text">
           <h3>Tartare de thon</h3>
           <p>Assaisonné au yuzu</p>
+          </div>
           <a>25€</a>
         </div>
-        <div>
+        <div class="art__ent">
+          <div class="art__ent--text">
           <h3>Bouchée de homard croustillant</h3>
           <p>Et sa farandole de petits légumes</p>
+          </div>
           <a>35€</a>
         </div>
-        <div>
+        <div class="art__ent">
+          <div class="art__ent--text">
           <h3>Poulet rôti aux herbes de Provence</h3>
           <p>Et sa crème de truffe</p>
+          </div>
           <a>40€</a>
         </div>
       </article>
-      <article>
+      <article class="art">
         <h2>PLATS</h2>
-        <div>
+        <div class="art__ent">
+          <div class="art__ent--text">
           <h3>Poulet rôti aux herbes de Provence</h3>
           <p>Et sa crème de truffe</p>
+          </div>
           <a>40€</a>
         </div>
-        <div>
+        <div class="art__ent">
+          <div class="art__ent--text">
           <h3>Langouste rôtie</h3>
           <p>Et ses légumes de saison</p>
+          </div>
           <a>35€</a>
         </div>
-        <div>
+        <div class="art__ent">
+          <div class="art__ent--text">
           <h3>Côte de bœuf Angus</h3>
           <p>Et sa purée de panais</p>
+          </div>
           <a>44€</a>
         </div>
       </article>
-      <article>
+      <article class="art">
         <h2>DESSERTS</h2>
-        <div>
+        <div class="art__ent">
+          <div class="art__ent--text">
           <h3>Farandole de desserts</h3>
           <p>Du chef</p>
+          </div>
           <a>18€</a>
         </div>
-        <div>
+        <div class="art__ent">
+          <div class="art__ent--text">
           <h3>Crème brulée</h3>
           <p>Revisitée</p>
+          </div>
           <a>22€</a>
         </div>
-        <div>
+        <div class="art__ent">
+          <div class="art__ent--text">
           <h3>Tiramisu</h3>
           <p>À la noisette</p>
+          </div>
           <a>23€</a>
         </div>
       </article>
-      <button>Commander</button>
+      <button class="btncommand">Commander</button>
     </main>
     <footer>
-      <img src="Assets/images/logo/ohmyfood@2x.svg" alt="titre" />
-      <ul>
-        <li><i class="fa-solid fa-utensils"></i> Proposer un restaurant</li>
-        <li><i class="fa-solid fa-handshake"></i> Devenir partenaire</li>
-        <li>Mentions légales</li>
-        <li>Conatct</li>
-      </ul>
+      <h1>ohmyfood</h1>
+      <div>
+        <p class="i">
+          <i class="fa-solid fa-utensils"></i> Proposer un restaurant
+        </p>
+        <p class="i">
+          <i class="fa-solid fa-handshake"></i> Devenir partenaire
+        </p>
+        <p class="p">Mentions légales</p>
+        <!-- Mettre un lien contact -->
+        <p class="p">Contact</p>
+      </div>
     </footer>
   </body>
 </html>

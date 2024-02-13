@@ -7,18 +7,15 @@ body {
 
     header {
         display: flex;
-        flex-direction: column;
-
-        .topheader {
-            width: 100%;
-            height: 63px;
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            box-shadow: 0px 2px 4px 0px rgba(0, 0, 0, 0.15);
+        width: 100%;
+        height: 63px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        box-shadow: 0px 2px 4px 0px rgba(0, 0, 0, 0.15);
 
             img {
-                width: 52.53%;
+                width: 197px;
                 height: 36px;
                 display: flex;
             }
@@ -27,9 +24,10 @@ body {
                 border: none;
                 background: none;
                 font-size: 17px;
+                position: absolute;
+                left: 30px;
 
             }
-        }
 
         // .menuimg{  
         //     width: 100%;
@@ -74,7 +72,8 @@ body {
 
         .art {
             width: 93.07%;
-            height: 270px;
+            min-height: 270px;
+            max-height: 351px;
             gap: 12px;
             display: flex;
             flex-direction: column;
@@ -86,8 +85,7 @@ body {
                 font-size: 16px;
                 border-bottom: 3px solid #99E2D0;
                 border-spacing: 27px;
-                
-            }
+            }    
 
             &__ent {
                 display: flex;
@@ -109,14 +107,14 @@ body {
 
                     h3 {
                         font-weight: 500;
-                        font-size: 18px;
+                        font-size: 15.6px;
                         height: 21px;
                     }
 
                     p{
                         height: 19px;
                         font-weight: 300;
-                        font-size: 15.04px;
+                        font-size: 14px;
                     }
 
                 }
@@ -150,7 +148,7 @@ body {
 
     footer {
         position: absolute;
-        top: 1404px;
+        top: calc(315px + 1058px + 40px);
         height: 186px;
         width: 100%;
         background-color: #353535;
@@ -189,4 +187,7 @@ body {
     
     }
     
+    .fourft {
+        top: calc(315px + 1136px + 40px);
+    }
 }

@@ -6,9 +6,6 @@ body {
 @media only screen and (max-width: 768px) {
   header {
     display: flex;
-    flex-direction: column;
-  }
-  header .topheader {
     width: 100%;
     height: 63px;
     display: flex;
@@ -16,15 +13,17 @@ body {
     justify-content: center;
     box-shadow: 0px 2px 4px 0px rgba(0, 0, 0, 0.15);
   }
-  header .topheader img {
-    width: 52.53%;
+  header img {
+    width: 197px;
     height: 36px;
     display: flex;
   }
-  header .topheader button {
+  header button {
     border: none;
     background: none;
     font-size: 17px;
+    position: absolute;
+    left: 30px;
   }
   main {
     width: 100%;
@@ -54,7 +53,8 @@ body {
   }
   main .art {
     width: 93.07%;
-    height: 270px;
+    min-height: 270px;
+    max-height: 351px;
     gap: 12px;
     display: flex;
     flex-direction: column;
@@ -87,13 +87,13 @@ body {
   }
   main .art__ent--text h3 {
     font-weight: 500;
-    font-size: 18px;
+    font-size: 15.6px;
     height: 21px;
   }
   main .art__ent--text p {
     height: 19px;
     font-weight: 300;
-    font-size: 15.04px;
+    font-size: 14px;
   }
   main .art__ent a {
     height: 42px;
@@ -118,7 +118,7 @@ body {
   }
   footer {
     position: absolute;
-    top: 1404px;
+    top: 1413px;
     height: 186px;
     width: 100%;
     background-color: #353535;
@@ -151,6 +151,9 @@ body {
   footer div .p {
     font-weight: 400;
   }
+  .fourft {
+    top: 1491px;
+  }
 }
 
-/*# sourceMappingURL=lapalettedugout.css.map */
+/*# sourceMappingURL=menu.css.map */
