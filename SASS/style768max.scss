@@ -3,67 +3,64 @@ body {
     background: #F6F6F6;
 }
 
-@media only screen and (max-width: 768px) {
+header {
 
-    header {
+    height: 113px;
+    display: flex;
+    flex-direction: column;
+    align-content: center;
 
-        height: 113px;
+    .imgh {
+        z-index: 1;
+        height: 63px;
+        box-shadow: 0px 2px 4px 0px #00000026;
         display: flex;
-        flex-direction: column;
-        align-content: center;
-
-        .imgh {
-            z-index: 1;
-            height: 63px;
-            box-shadow: 0px 2px 4px 0px #00000026;
-            display: flex;
-            justify-content: center;
-            background-color: white;
+        justify-content: center;
+        background-color: white;
             
 
-                img {
-                    width: 197px;
-                    height: 36px;
-                    position: absolute;
-                    top: 14px;
+            img {
+                width: 197px;
+                height: 36px;
+                position: absolute;
+                top: 14px;
                 }
         }
 
-        .location {
-            z-index: 2;
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            gap: 17px;
-            position: relative;
-            height: 50px;
-            top: calc(63px - 62.5px);
-            left: -0.5px;
-            width: 100%;
-            background: #EAEAEA;
-            box-shadow: 0px 4px 4px 0px #00000040;
+    .location {
+        z-index: 2;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        gap: 17px;
+        position: relative;
+        height: 50px;
+        top: calc(63px - 62.5px);
+        left: -0.5px;
+        width: 100%;
+        background: #EAEAEA;
+        box-shadow: 0px 4px 4px 0px #00000040;
 
         }
 
-        form {
-            input {
-                text-align: center;
-                border: none;
-                background-color: #EAEAEA;
-                width: 109px;
-                position: relative;
-                top: 2px;
+    form {
+        input {
+            text-align: center;
+            border: none;
+            background-color: #EAEAEA;
+            width: 109px;
+            position: relative;
+            top: 2px;
 
-                &::placeholder {
-                    color: #353535;
-                    font-size: 16px;
-                    font-weight: 500;
+            &::placeholder {
+                color: #353535;
+                font-size: 16px;
+                font-weight: 500;
                 }
             }
         }
 
-    }
-
+}
 
 .firstparty {
 
@@ -377,7 +374,5 @@ footer {
             font-weight: 400;
         }
     }
-
-}
 
 }

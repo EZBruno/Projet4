@@ -1,108 +1,47 @@
-body {
-  font-family: "Roboto", sans-serif;
-  background: #F6F6F6;
-}
-
-@media only screen and (max-width: 768px) {
+@media only screen and (min-width: 768px) {
   header {
-    height: 113px;
-    display: flex;
-    flex-direction: column;
-    align-content: center;
+    height: 146px;
   }
   header .imgh {
-    z-index: 1;
-    height: 63px;
-    box-shadow: 0px 2px 4px 0px rgba(0, 0, 0, 0.1490196078);
-    display: flex;
-    justify-content: center;
-    background-color: white;
+    height: 96px;
+    align-items: center;
   }
   header .imgh img {
-    width: 197px;
-    height: 36px;
-    position: absolute;
-    top: 14px;
-  }
-  header .location {
-    z-index: 2;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    gap: 17px;
-    position: relative;
-    height: 50px;
-    top: 0.5px;
-    left: -0.5px;
-    width: 100%;
-    background: #EAEAEA;
-    box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.2509803922);
-  }
-  header form input {
-    text-align: center;
-    border: none;
-    background-color: #EAEAEA;
-    width: 109px;
-    position: relative;
-    top: 2px;
-  }
-  header form input::placeholder {
-    color: #353535;
-    font-size: 16px;
-    font-weight: 500;
+    position: inherit;
+    width: 200px;
+    height: 34.2px;
   }
   .firstparty {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    text-align: center;
-    align-items: center;
+    height: 239px;
+    width: 100%;
   }
   .firstparty h1 {
-    position: absolute;
-    top: 152px;
-    font-size: 24px;
-    font-weight: 700;
-    line-height: 28.13px;
-    margin: 0 68px;
+    top: 176px;
+    font-size: 40px;
+    line-height: 46.88px;
+    width: 645px;
+    margin: 0;
   }
   .firstparty p {
-    font-weight: 300;
-    font-size: 18px;
-    color: rgb(53, 53, 53);
-    position: absolute;
-    top: 220px;
-    margin: 0 30px;
+    display: flex;
+    align-items: center;
+    top: 241px;
+    height: 46px;
+    margin: 0;
   }
   .firstparty a {
-    position: absolute;
-    top: 293px;
-    text-decoration: none;
-    color: #FFFFFF;
-    font-weight: 500;
-    font-size: 16px;
-    line-height: 18.75px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    background: linear-gradient(193.33deg, #9356DC -11.44%, #FF79DA 123.93%);
-    box-shadow: 0px 4px 10px 0px rgba(0, 0, 0, 0.25);
-    border-radius: 25px;
-    width: 218px;
-    height: 50px;
+    top: 305px;
   }
   .fonct {
-    width: 100%;
-    height: 440px;
-    position: absolute;
-    top: 400px;
-    background-color: #FFFFFF;
-    display: flex;
-    flex-direction: column;
-    flex-wrap: wrap;
-    align-items: center;
+    flex-direction: row;
+    gap: 25px;
   }
-  .fonct h2 {
+  nav .fonct {
+    width: 100%;
+    height: 228.38px;
+    flex-direction: row;
+  }
+  nav .fonct h2 {
     font-weight: 700;
     font-size: 24px;
     position: absolute;
@@ -111,13 +50,30 @@ body {
     top: 48px;
     left: 5%;
   }
-  .fonct div {
+  nav .fonct__bal1, nav .fonct__bal2, nav .fonct__bal3 {
     display: flex;
     position: absolute;
-    width: 89.3%;
+    width: 37.02%;
     height: 72.38px;
+    top: 0;
   }
-  .fonct div button {
+  nav .fonct__bal1 {
+    left: 180px;
+  }
+  nav .fonct__bal2 {
+    left: 539px;
+  }
+  nav .fonct__bal3 {
+    left: 898px;
+  }
+  nav .fonct__menu {
+    display: flex;
+    flex-direction: row;
+    width: 73.13%;
+    height: 72.38px;
+    gap: 25px;
+  }
+  nav .fonct button {
     position: absolute;
     left: -4px;
     top: 26.68px;
@@ -131,7 +87,7 @@ body {
     width: 24px;
     height: 24px;
   }
-  .fonct a {
+  nav .fonct a {
     position: absolute;
     width: 96.26%;
     height: 72.38px;
@@ -141,30 +97,30 @@ body {
     box-shadow: 0px 4px 15px 0px rgba(0, 0, 0, 0.1490196078);
     text-decoration: none;
   }
-  .fonct a i {
+  nav .fonct a i {
     color: #7E7E7E;
   }
-  .fonct a i:hover {
+  nav .fonct a i:hover {
     color: #9356DC;
   }
-  .fonct a i.fa-solid.fa-mobile-screen-button {
+  nav .fonct a i.fa-solid.fa-mobile-screen-button {
     position: absolute;
     left: 45px;
     top: 24.54px;
     font-size: 19px;
   }
-  .fonct a i.fa-solid.fa-list-ul {
+  nav .fonct a i.fa-solid.fa-list-ul {
     position: absolute;
     left: 47px;
     top: 27.91px;
   }
-  .fonct a i.fa-solid.fa-store {
+  nav .fonct a i.fa-solid.fa-store {
     position: absolute;
     left: 48px;
     top: 26.67px;
     font-size: 18px;
   }
-  .fonct a p {
+  nav .fonct a p {
     font-size: 16px;
     font-weight: 500;
     height: 15.67px;
@@ -173,15 +129,6 @@ body {
     display: flex;
     justify-content: center;
     color: #000000;
-  }
-  .fonct__bal1 {
-    top: 105px;
-  }
-  .fonct__bal2 {
-    top: 202.3px;
-  }
-  .fonct__bal3 {
-    top: 299.62px;
   }
   .restaurantsection .title {
     position: absolute;
@@ -315,4 +262,4 @@ body {
   }
 }
 
-/*# sourceMappingURL=style.css.map */
+/*# sourceMappingURL=style768min.css.map */

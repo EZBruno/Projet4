@@ -51,10 +51,13 @@ body {
   main .maintitle h1 i {
     font-size: 22px;
   }
+  main .art:has(.entfour) {
+    height: 351px;
+    gap: 12px;
+  }
   main .art {
     width: 93.07%;
-    min-height: 270px;
-    max-height: 351px;
+    height: 270px;
     gap: 12px;
     display: flex;
     flex-direction: column;
@@ -118,7 +121,7 @@ body {
   }
   footer {
     position: absolute;
-    top: 1413px;
+    top: 1404px;
     height: 186px;
     width: 100%;
     background-color: #353535;
@@ -152,8 +155,8 @@ body {
     font-weight: 400;
   }
   .fourft {
-    top: 1491px;
+    top: 1485px;
   }
 }
 
-/*# sourceMappingURL=menu.css.map */
+/*# sourceMappingURL=menu768max.css.map */
