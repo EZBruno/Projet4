@@ -5,8 +5,6 @@
   header .imgh {
     height: 96px;
     align-items: center;
-  }
-  header .imgh img {
     position: inherit;
     width: 200px;
     height: 34.2px;
