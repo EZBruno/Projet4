@@ -1,80 +1,132 @@
-@media only screen and (min-width: 768px) {
+body {
+  font-family: "Roboto", sans-serif;
+  background: #F6F6F6;
+}
+
+@media only screen and (min-width: 769px) {
   header {
     height: 146px;
+    display: flex;
+    flex-direction: column;
+    align-content: center;
   }
   header .imgh {
     height: 96px;
-    align-items: center;
-    position: inherit;
-    width: 200px;
-    height: 34.2px;
+    box-shadow: 0px 2px 4px 0px rgba(0, 0, 0, 0.1490196078);
+    display: flex;
+    justify-content: center;
+    background-color: white;
   }
-  .firstparty {
-    height: 239px;
-    width: 100%;
+  header .imgh img {
+    width: 197px;
+    height: 36px;
+    position: absolute;
+    top: 30px;
   }
-  .firstparty h1 {
-    top: 176px;
-    font-size: 40px;
-    line-height: 46.88px;
-    width: 645px;
-    margin: 0;
-  }
-  .firstparty p {
+  header .location {
     display: flex;
     align-items: center;
-    top: 241px;
-    height: 46px;
-    margin: 0;
+    justify-content: center;
+    gap: 17px;
+    position: relative;
+    height: 50px;
+    top: 0.5px;
+    left: -0.5px;
+    width: 100%;
+    background: #EAEAEA;
+    box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.2509803922);
   }
-  .firstparty a {
-    top: 305px;
+  header form input {
+    text-align: center;
+    border: none;
+    background-color: #EAEAEA;
+    width: 109px;
+    position: relative;
+    top: 2px;
   }
-  .fonct {
-    flex-direction: row;
-    gap: 25px;
+  header form input::placeholder {
+    color: #353535;
+    font-size: 16px;
+    font-weight: 500;
   }
-  nav .fonct {
+  main {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  main .firstparty {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    text-align: center;
+    align-items: center;
+    height: 179px;
+    margin: 33px 27.62%;
+    width: 100%;
+  }
+  main .firstparty h1 {
+    font-size: 40px;
+    font-weight: 700;
+  }
+  main .firstparty p {
+    font-weight: 300;
+    font-size: 18px;
+    color: rgb(53, 53, 53);
+  }
+  main .firstparty .restaubtn {
+    text-decoration: none;
+    color: #FFFFFF;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 18.75px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: linear-gradient(193.33deg, #9356DC -11.44%, #FF79DA 123.93%);
+    box-shadow: 0px 4px 10px 0px rgba(0, 0, 0, 0.25);
+    border-radius: 25px;
+    width: 218px;
+    height: 50px;
+  }
+  main .fonct {
     width: 100%;
     height: 228.38px;
-    flex-direction: row;
+    background-color: #FFFFFF;
+    gap: 25px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
   }
-  nav .fonct h2 {
+  main .fonct h2 {
     font-weight: 700;
     font-size: 24px;
-    position: absolute;
-    width: 100%;
+    width: 275px;
     height: 31px;
-    top: 48px;
-    left: 5%;
+    position: relative;
+    left: 12.5%;
   }
-  nav .fonct__bal1, nav .fonct__bal2, nav .fonct__bal3 {
-    display: flex;
-    position: absolute;
-    width: 37.02%;
+  main .fonct__menu {
     height: 72.38px;
-    top: 0;
   }
-  nav .fonct__bal1 {
-    left: 180px;
-  }
-  nav .fonct__bal2 {
-    left: 539px;
-  }
-  nav .fonct__bal3 {
-    left: 898px;
-  }
-  nav .fonct__menu {
-    display: flex;
-    flex-direction: row;
-    width: 73.13%;
-    height: 72.38px;
-    gap: 25px;
-  }
-  nav .fonct button {
+  main .fonct__bal1, main .fonct__bal2, main .fonct__bal3 {
     position: absolute;
-    left: -4px;
-    top: 26.68px;
+    width: 23.26%;
+    border-radius: 20px;
+    background: #F6F6F6;
+    box-shadow: 0px 4px 15px 0px rgba(0, 0, 0, 0.1490196078);
+    text-decoration: none;
+    display: flex;
+    align-items: center;
+  }
+  main .fonct__bal1:hover, main .fonct__bal2:hover, main .fonct__bal3:hover {
+    color: #9356DC;
+  }
+  main .fonct__bal1 .num, main .fonct__bal2 .num, main .fonct__bal3 .num {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: absolute;
+    left: -12px;
     border-radius: 50%;
     color: white;
     background-color: #9356DC;
@@ -84,71 +136,75 @@
     line-height: 17px;
     width: 24px;
     height: 24px;
+    right: 44px;
   }
-  nav .fonct a {
-    position: absolute;
-    width: 96.26%;
-    height: 72.38px;
-    left: 10px;
-    border-radius: 20px;
-    background: #F6F6F6;
-    box-shadow: 0px 4px 15px 0px rgba(0, 0, 0, 0.1490196078);
-    text-decoration: none;
-  }
-  nav .fonct a i {
+  main .fonct__bal1 i, main .fonct__bal2 i, main .fonct__bal3 i {
     color: #7E7E7E;
+    width: 27.73%;
+    height: 72.38px;
+    position: relative;
+    top: 25px;
+    left: 11.34%;
+    font-size: 18px;
+    right: 44px;
   }
-  nav .fonct a i:hover {
+  main .fonct__bal1 i:hover, main .fonct__bal2 i:hover, main .fonct__bal3 i:hover {
     color: #9356DC;
   }
-  nav .fonct a i.fa-solid.fa-mobile-screen-button {
-    position: absolute;
-    left: 45px;
-    top: 24.54px;
-    font-size: 19px;
-  }
-  nav .fonct a i.fa-solid.fa-list-ul {
-    position: absolute;
-    left: 47px;
-    top: 27.91px;
-  }
-  nav .fonct a i.fa-solid.fa-store {
-    position: absolute;
-    left: 48px;
-    top: 26.67px;
-    font-size: 18px;
-  }
-  nav .fonct a p {
-    font-size: 16px;
-    font-weight: 500;
-    height: 15.67px;
-    position: relative;
-    top: 28.59px;
+  main .fonct__bal1 p, main .fonct__bal2 p, main .fonct__bal3 p {
+    width: 100%;
+    height: 72.38px;
     display: flex;
-    justify-content: center;
+    align-items: center;
+    font-weight: 500;
+    font-size: 16px;
     color: #000000;
   }
-  .restaurantsection .title {
-    position: absolute;
-    top: 894px;
-    left: 20px;
-    height: 68px;
+  main .fonct__bal1 {
+    left: 13.37%;
+  }
+  main .fonct__bal2 {
+    left: 38.3%;
+  }
+  main .fonct__bal3 {
+    left: 63.23%;
+  }
+  main .restaurantsection {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    height: 608px;
+    gap: 28px;
+    padding: 28px 0;
+  }
+  main .restaurantsection .title {
+    position: relative;
+    left: 12.5%;
+    height: 28px;
     width: 275px;
     font-weight: 700;
     font-size: 24px;
   }
-  .restaurantsection .resto {
-    position: absolute;
-    top: 942px;
-    gap: 18px;
-    width: 100%;
-    height: 1058px;
-    border-radius: 15px;
+  main .restaurantsection .resto {
+    position: relative;
+    left: 12.5%;
+    width: 75%;
+    height: 552px;
     display: flex;
     flex-direction: column;
-    align-items: center;
+    gap: 50px;
   }
-  .restaurantsection .resto__cont {
+  main .restaurantsection .resto a {
+    text-decoration: none;
+    color: unset;
+  }
+  main .restaurantsection .resto__flex {
+    display: flex;
+    width: 100%;
+    height: 251px;
+    gap: 100px;
+  }
+  main .restaurantsection .resto__cont {
     width: 90.6%;
     height: 251px;
     border-radius: 15px;
@@ -156,21 +212,22 @@
     flex-direction: column;
     background-color: white;
   }
-  .restaurantsection .resto__cont img {
+  main .restaurantsection .resto__cont img {
     width: 100%;
     height: 174px;
     border-radius: 15px 15px 0 0;
     object-fit: cover;
-    object-position: 50% 100%;
+    object-position: 100% 65%;
   }
-  .restaurantsection .resto__cont img.second {
+  main .restaurantsection .resto__cont img.second {
     object-position: 50% 61%;
   }
-  .restaurantsection .resto__cont--new {
+  main .restaurantsection .resto__cont--new {
     position: relative;
     top: -160px;
     left: 72.94%;
     width: 23.52%;
+    max-width: 110px;
     padding-top: 6.5px;
     padding-bottom: 6.5px;
     border-radius: 2px;
@@ -183,58 +240,59 @@
     color: #008766;
     font-weight: 500;
   }
-  .restaurantsection .resto__cont--title {
+  main .restaurantsection .resto__cont--title {
     position: relative;
     top: 15px;
     font-weight: 700;
     font-size: 18px;
     left: 13px;
+    text-decoration: none;
   }
-  .restaurantsection .resto__cont--titlenew {
+  main .restaurantsection .resto__cont--titlenew {
     position: relative;
     top: -15px;
     font-weight: 700;
     font-size: 18px;
     left: 13px;
   }
-  .restaurantsection .resto__cont--name {
+  main .restaurantsection .resto__cont--name {
     position: relative;
     font-size: 17px;
     font-weight: 300;
     top: 20px;
     left: 13px;
   }
-  .restaurantsection .resto__cont--namenew {
+  main .restaurantsection .resto__cont--namenew {
     position: relative;
     font-size: 17px;
     font-weight: 300;
     top: -10px;
     left: 13px;
   }
-  .restaurantsection .resto__cont .newheart {
+  main .restaurantsection .resto__cont .newheart {
     position: relative;
     top: -45px;
     left: 86.17%;
     font-size: 22px;
+    width: 22px;
   }
-  .restaurantsection .resto__cont .heart {
+  main .restaurantsection .resto__cont .heart {
     position: relative;
     top: -20px;
     left: 86.17%;
     font-size: 22px;
+    width: 22px;
   }
   footer {
-    position: absolute;
-    top: 2066px;
-    height: 186px;
+    height: 54px;
     width: 100%;
     background-color: #353535;
     color: white;
     display: flex;
-    flex-direction: column;
-    justify-content: center;
+    flex-direction: row-reverse;
+    align-items: flex-end;
     gap: 16px;
-    padding: 22px 25px 22px 25px;
+    padding: 30px 0;
   }
   footer h1 {
     height: 27px;
@@ -244,19 +302,36 @@
     line-height: 26px;
     letter-spacing: 0em;
     text-align: left;
+    position: relative;
+    right: 25px;
   }
   footer div {
+    height: 54px;
     display: flex;
-    flex-direction: column;
+    align-items: flex-end;
     list-style: none;
     gap: 7px;
     font-size: 16px;
+    position: relative;
+    right: 25px;
   }
   footer div .i {
     font-weight: 500;
+    width: 190px;
+    height: 19px;
   }
   footer div .p {
-    font-weight: 400;
+    width: 60px;
+    height: 20px;
+  }
+  footer div .p1 {
+    width: 130px;
+  }
+  footer div .fa-utensils {
+    font-size: 12px;
+  }
+  footer div .fa-handshake {
+    font-size: 12.5px;
   }
 }
 
