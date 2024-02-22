@@ -1,6 +1,6 @@
 body {
   font-family: "Roboto", sans-serif;
-  background: #F6F6F6;
+  background: #f6f6f6;
 }
 
 @media only screen and (min-width: 769px) {
@@ -33,13 +33,13 @@ body {
     top: 0.5px;
     left: -0.5px;
     width: 100%;
-    background: #EAEAEA;
+    background: #eaeaea;
     box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.2509803922);
   }
   header form input {
     text-align: center;
     border: none;
-    background-color: #EAEAEA;
+    background-color: #eaeaea;
     width: 109px;
     position: relative;
     top: 2px;
@@ -75,14 +75,14 @@ body {
   }
   main .firstparty .restaubtn {
     text-decoration: none;
-    color: #FFFFFF;
+    color: #ffffff;
     font-weight: 500;
     font-size: 16px;
     line-height: 18.75px;
     display: flex;
     align-items: center;
     justify-content: center;
-    background: linear-gradient(193.33deg, #9356DC -11.44%, #FF79DA 123.93%);
+    background: linear-gradient(193.33deg, #9356dc -11.44%, #ff79da 123.93%);
     box-shadow: 0px 4px 10px 0px rgba(0, 0, 0, 0.25);
     border-radius: 25px;
     width: 218px;
@@ -91,7 +91,7 @@ body {
   main .fonct {
     width: 100%;
     height: 228.38px;
-    background-color: #FFFFFF;
+    background-color: #ffffff;
     gap: 25px;
     display: flex;
     flex-direction: column;
@@ -108,20 +108,26 @@ body {
   main .fonct__menu {
     height: 72.38px;
   }
-  main .fonct__bal1, main .fonct__bal2, main .fonct__bal3 {
+  main .fonct__bal1,
+  main .fonct__bal2,
+  main .fonct__bal3 {
     position: absolute;
     width: 23.26%;
     border-radius: 20px;
-    background: #F6F6F6;
+    background: #f6f6f6;
     box-shadow: 0px 4px 15px 0px rgba(0, 0, 0, 0.1490196078);
     text-decoration: none;
     display: flex;
     align-items: center;
   }
-  main .fonct__bal1:hover, main .fonct__bal2:hover, main .fonct__bal3:hover {
-    color: #9356DC;
+  main .fonct__bal1:hover,
+  main .fonct__bal2:hover,
+  main .fonct__bal3:hover {
+    color: #9356dc;
   }
-  main .fonct__bal1 .num, main .fonct__bal2 .num, main .fonct__bal3 .num {
+  main .fonct__bal1 .num,
+  main .fonct__bal2 .num,
+  main .fonct__bal3 .num {
     display: flex;
     align-items: center;
     justify-content: center;
@@ -129,7 +135,7 @@ body {
     left: -12px;
     border-radius: 50%;
     color: white;
-    background-color: #9356DC;
+    background-color: #9356dc;
     border: none;
     font-size: 14px;
     font-weight: 500;
@@ -138,8 +144,10 @@ body {
     height: 24px;
     right: 44px;
   }
-  main .fonct__bal1 i, main .fonct__bal2 i, main .fonct__bal3 i {
-    color: #7E7E7E;
+  main .fonct__bal1 i,
+  main .fonct__bal2 i,
+  main .fonct__bal3 i {
+    color: #7e7e7e;
     width: 27.73%;
     height: 72.38px;
     position: relative;
@@ -148,10 +156,14 @@ body {
     font-size: 18px;
     right: 44px;
   }
-  main .fonct__bal1 i:hover, main .fonct__bal2 i:hover, main .fonct__bal3 i:hover {
-    color: #9356DC;
+  main .fonct__bal1 i:hover,
+  main .fonct__bal2 i:hover,
+  main .fonct__bal3 i:hover {
+    color: #9356dc;
   }
-  main .fonct__bal1 p, main .fonct__bal2 p, main .fonct__bal3 p {
+  main .fonct__bal1 p,
+  main .fonct__bal2 p,
+  main .fonct__bal3 p {
     width: 100%;
     height: 72.38px;
     display: flex;
@@ -231,7 +243,7 @@ body {
     padding-top: 6.5px;
     padding-bottom: 6.5px;
     border-radius: 2px;
-    background-color: #99E2D0;
+    background-color: #99e2d0;
     box-shadow: 0px 2px 4px 0px rgba(0, 0, 0, 0.1490196078);
     display: flex;
     justify-content: center;
@@ -322,7 +334,7 @@ body {
   }
   footer div .p {
     width: 60px;
-    height: 20px;
+    height: 17px;
   }
   footer div .p1 {
     width: 130px;

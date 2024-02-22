@@ -1,6 +1,6 @@
 body {
   font-family: "Roboto", sans-serif;
-  background: #F6F6F6;
+  background: #f6f6f6;
 }
 
 @media only screen and (max-width: 768px) {
@@ -33,13 +33,13 @@ body {
     top: 0.5px;
     left: -0.5px;
     width: 100%;
-    background: #EAEAEA;
+    background: #eaeaea;
     box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.2509803922);
   }
   header form input {
     text-align: center;
     border: none;
-    background-color: #EAEAEA;
+    background-color: #eaeaea;
     width: 109px;
     position: relative;
     top: 2px;
@@ -76,14 +76,14 @@ body {
     position: absolute;
     top: 293px;
     text-decoration: none;
-    color: #FFFFFF;
+    color: #ffffff;
     font-weight: 500;
     font-size: 16px;
     line-height: 18.75px;
     display: flex;
     align-items: center;
     justify-content: center;
-    background: linear-gradient(193.33deg, #9356DC -11.44%, #FF79DA 123.93%);
+    background: linear-gradient(193.33deg, #9356dc -11.44%, #ff79da 123.93%);
     box-shadow: 0px 4px 10px 0px rgba(0, 0, 0, 0.25);
     border-radius: 25px;
     width: 218px;
@@ -94,7 +94,7 @@ body {
     height: 440px;
     position: absolute;
     top: 400px;
-    background-color: #FFFFFF;
+    background-color: #ffffff;
   }
   .fonct h2 {
     font-weight: 700;
@@ -109,21 +109,27 @@ body {
     display: flex;
     justify-content: center;
   }
-  .fonct__bal1, .fonct__bal2, .fonct__bal3 {
+  .fonct__bal1,
+  .fonct__bal2,
+  .fonct__bal3 {
     position: absolute;
     width: 89.3%;
     height: 72.38px;
     border-radius: 20px;
-    background: #F6F6F6;
+    background: #f6f6f6;
     box-shadow: 0px 4px 15px 0px rgba(0, 0, 0, 0.1490196078);
     text-decoration: none;
     display: flex;
     align-items: center;
   }
-  .fonct__bal1:hover, .fonct__bal2:hover, .fonct__bal3:hover {
-    color: #9356DC;
+  .fonct__bal1:hover,
+  .fonct__bal2:hover,
+  .fonct__bal3:hover {
+    color: #9356dc;
   }
-  .fonct__bal1 .num, .fonct__bal2 .num, .fonct__bal3 .num {
+  .fonct__bal1 .num,
+  .fonct__bal2 .num,
+  .fonct__bal3 .num {
     display: flex;
     align-items: center;
     justify-content: center;
@@ -131,7 +137,7 @@ body {
     left: -12px;
     border-radius: 50%;
     color: white;
-    background-color: #9356DC;
+    background-color: #9356dc;
     border: none;
     font-size: 14px;
     font-weight: 500;
@@ -139,8 +145,10 @@ body {
     width: 24px;
     height: 24px;
   }
-  .fonct__bal1 i, .fonct__bal2 i, .fonct__bal3 i {
-    color: #7E7E7E;
+  .fonct__bal1 i,
+  .fonct__bal2 i,
+  .fonct__bal3 i {
+    color: #7e7e7e;
     width: 27.73%;
     height: 72.38px;
     position: relative;
@@ -148,10 +156,14 @@ body {
     left: 11.34%;
     font-size: 18px;
   }
-  .fonct__bal1 i:hover, .fonct__bal2 i:hover, .fonct__bal3 i:hover {
-    color: #9356DC;
+  .fonct__bal1 i:hover,
+  .fonct__bal2 i:hover,
+  .fonct__bal3 i:hover {
+    color: #9356dc;
   }
-  .fonct__bal1 p, .fonct__bal2 p, .fonct__bal3 p {
+  .fonct__bal1 p,
+  .fonct__bal2 p,
+  .fonct__bal3 p {
     width: 100%;
     height: 72.38px;
     display: flex;
@@ -224,7 +236,7 @@ body {
     padding-top: 6.5px;
     padding-bottom: 6.5px;
     border-radius: 2px;
-    background-color: #99E2D0;
+    background-color: #99e2d0;
     box-shadow: 0px 2px 4px 0px rgba(0, 0, 0, 0.1490196078);
     display: flex;
     justify-content: center;

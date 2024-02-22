@@ -3,20 +3,23 @@ body {
     background: #F6F6F6;
 }
 
-@media only screen and (max-width: 768px) {
+@media only screen and (min-width: 769px) {
+
+    body {
+        background: white;
+    }
 
     header {
         display: flex;
         width: 100%;
-        height: 63px;
-        display: flex;
+        height: 96.34px;
         align-items: center;
         justify-content: center;
         box-shadow: 0px 2px 4px 0px rgba(0, 0, 0, 0.15);
 
             .logo {
-                width: 197px;
-                height: 36px;
+                width: 200px;
+                height: 34.2px;
                 display: flex;
             }
 
@@ -35,10 +38,19 @@ body {
 
             .menuimg{  
                 width: 100%;
-                height: 275px;
+                height: 383px;
                 position: absolute;
-                top: 63px;
+                top: 96px;
                 object-fit: cover;
+                object-position: 0 58%;
+            }
+
+            .alafr {
+                object-position: 0% 68%;
+            }
+
+            .ledelice {
+                object-position: 0% 73%;
             }
         
 
@@ -47,25 +59,28 @@ body {
     main {
         background: rgba(246, 246, 246, 1);
         border-radius: 40px 40px 0px 0px;
-        padding-top: 32px;
-        width: 100%;
+        padding-top: 42px;
+        width: 73.26%;
         display: flex;
         flex-direction: column;
         align-items: center;
         gap: 40px;
         position: absolute;
-        top: calc(315px - 32px);
+        top: 439px;
+        left: 13.37%;
+        padding-bottom: 40px;
 
         .maintitle {
-            
             width: 90.93%;
+            display: flex;
+            justify-content: center;
 
             h1 {
                 font-family: shrikhand;
                 font-weight: 400;
                 font-size: 28px;
                 color: #101010;
-                width: 100%;
+                width: 310px;
                 height: 29px;
                 display: flex;
                 justify-content: space-between;
@@ -83,7 +98,7 @@ body {
         }
 
         .art {
-            width: 93.07%;
+            width: 60.09%;
             height: 270px;
             gap: 12px;
             display: flex;
@@ -118,14 +133,14 @@ body {
 
                     h3 {
                         font-weight: 500;
-                        font-size: 15.6px;
+                        font-size: 18px;
                         height: 21px;
                     }
 
                     p{
                         height: 19px;
                         font-weight: 300;
-                        font-size: 14px;
+                        font-size: 15px;
                     }
 
                 }
@@ -158,17 +173,17 @@ body {
     }
 
     footer {
-        position: absolute;
-        top: calc(315px + 1049px + 40px);
-        height: 186px;
-        width: calc(100% - 25px);
+        position: relative;
+        top: 1475px;
+        height: calc(114px - 60px);
+        width: 100%;
         background-color: #353535;
         color: white;
         display: flex;
-        flex-direction: column;
-        justify-content: center;
+        flex-direction: row-reverse;
+        align-items: flex-end;
         gap: 16px;
-        padding-left: 25px;
+        padding: 30px 0;
     
         h1 {
             height: 27px;
@@ -178,27 +193,43 @@ body {
             line-height: 26px;
             letter-spacing: 0em;
             text-align: left;
+            position: relative;
+            right: 25px;
         }
     
         div {
+            height: calc(114px - 60px);
             display: flex;
-            flex-direction: column;
+            align-items: flex-end;
             list-style: none;
             gap: 7px;
             font-size: 16px;
+            position: relative;
+            right: 25px;
     
             .i {
                 font-weight: 500;
+                width: 190px;
+                height: 19px;
             }
     
             .p {
-                font-weight: 400;
+                width: 60px;
+                height: 17px;
+            }
+    
+            .p1 {
+                width: 130px;
+            }
+    
+            .fa-utensils {
+                font-size: 12px;
+            }
+    
+            .fa-handshake {
+                font-size: 12.5px;
             }
         }
     
-    }
-    
-    .fourft {
-        top: calc(315px + 1130px + 40px);
     }
 }
