@@ -169,13 +169,12 @@ header {
             color: #7E7E7E;
             width: 27.73%;
             height: 72.38px;
-            position: relative;
-            top: 25px;
-            left: 11.34%;
-            font-size: 18px;
-            
-            &:hover {
-                color: #9356DC;
+
+            &.fa-solid {
+                display: flex;
+                justify-content: center;
+                position: relative;
+                top: 25px;
             }
         }
 
@@ -187,6 +186,14 @@ header {
             font-weight: 500;
             font-size: 16px;
             color: #000000;
+                        
+            &:hover {
+            
+                i {
+                color: #9356DC;
+                }
+            }
+
         }
     }
 

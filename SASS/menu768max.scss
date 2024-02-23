@@ -4,7 +4,7 @@ body {
 }
 
 @media only screen and (max-width: 768px) {
-
+    
     header {
         display: flex;
         width: 100%;
@@ -15,15 +15,14 @@ body {
         box-shadow: 0px 2px 4px 0px rgba(0, 0, 0, 0.15);
 
             .logo {
-                width: 197px;
-                height: 36px;
+                width: 162px;
                 display: flex;
             }
 
             a {
                 border: none;
                 background: none;
-                font-size: 17px;
+                font-size: 30px;
                 position: absolute;
                 left: 30px;
                 color: inherit;
@@ -77,14 +76,10 @@ body {
             }
         }
 
-        .entfour {
-            height: 351px;
-            gap: 12px;
-        }
-
         .art {
             width: 93.07%;
-            height: 270px;
+            min-height: 270px;
+            max-height: 351px;
             gap: 12px;
             display: flex;
             flex-direction: column;
@@ -117,13 +112,11 @@ body {
                     gap: 5px;
 
                     h3 {
-                        font-weight: 500;
                         font-size: 15.6px;
                         height: 21px;
                     }
 
                     p{
-                        height: 19px;
                         font-weight: 300;
                         font-size: 14px;
                     }
@@ -158,8 +151,8 @@ body {
     }
 
     footer {
-        position: absolute;
-        top: calc(315px + 1049px + 40px);
+        position: relative;
+        top: 1422px;
         height: 186px;
         width: calc(100% - 25px);
         background-color: #353535;

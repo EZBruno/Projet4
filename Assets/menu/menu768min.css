@@ -1,11 +1,17 @@
-body {
-  font-family: "Roboto", sans-serif;
-  background: #f6f6f6;
-}
-
 @media only screen and (min-width: 769px) {
   body {
+    height: 100%;
     background: white;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  .widthblock {
+    width: 100%;
+    max-width: 1440px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
   }
   header {
     display: flex;
@@ -18,12 +24,11 @@ body {
   header .logo {
     width: 200px;
     height: 34.2px;
-    display: flex;
   }
   header a {
     border: none;
     background: none;
-    font-size: 17px;
+    font-size: 30px;
     position: absolute;
     left: 30px;
     color: inherit;
@@ -33,6 +38,7 @@ body {
   }
   header .menuimg {
     width: 100%;
+    max-width: 1440px;
     height: 383px;
     position: absolute;
     top: 96px;
@@ -54,9 +60,8 @@ body {
     flex-direction: column;
     align-items: center;
     gap: 40px;
-    position: absolute;
-    top: 439px;
-    left: 13.37%;
+    position: relative;
+    top: 342.66px;
     padding-bottom: 40px;
   }
   main .maintitle {
@@ -78,13 +83,10 @@ body {
   main .maintitle h1 i {
     font-size: 22px;
   }
-  main .entfour {
-    height: 351px;
-    gap: 12px;
-  }
   main .art {
     width: 60.09%;
-    height: 270px;
+    min-height: 270px;
+    max-height: 351px;
     gap: 12px;
     display: flex;
     flex-direction: column;
@@ -94,7 +96,7 @@ body {
     height: 27px;
     font-weight: 300;
     font-size: 16px;
-    border-bottom: 3px solid #99e2d0;
+    border-bottom: 3px solid #99E2D0;
     border-spacing: 27px;
   }
   main .art__ent {
@@ -105,8 +107,7 @@ body {
     height: 69px;
     border-radius: 15.04px;
     background-color: white;
-    box-shadow: 0px 4.0114941597px 15.0431032181px 0px
-      rgba(0, 0, 0, 0.1019607843);
+    box-shadow: 0px 4.0114941597px 15.0431032181px 0px rgba(0, 0, 0, 0.1019607843);
   }
   main .art__ent--text {
     width: 82.23%;
@@ -117,7 +118,6 @@ body {
     gap: 5px;
   }
   main .art__ent--text h3 {
-    font-weight: 500;
     font-size: 18px;
     height: 21px;
   }
@@ -136,7 +136,7 @@ body {
   main .btncommand {
     width: 186px;
     height: 50px;
-    background: linear-gradient(193.33deg, #9356dc -11.44%, #ff79da 123.93%);
+    background: linear-gradient(193.33deg, #9356DC -11.44%, #FF79DA 123.93%);
     box-shadow: 0px 4px 10px 0px rgba(0, 0, 0, 0.25);
     border-radius: 25px;
     border: none;
@@ -149,7 +149,7 @@ body {
   }
   footer {
     position: relative;
-    top: 1475px;
+    top: 344px;
     height: 54px;
     width: 100%;
     background-color: #353535;

@@ -2,7 +2,20 @@ body {
     font-family: 'Roboto', sans-serif;
     background: #F6F6F6;
 }
+
 @media only screen and (min-width: 769px) {
+
+body {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.widthblock {
+    width: 100%;
+    max-width: 1440px;
+    // box-shadow: 0px 2px 4px 0px rgba(0, 0, 0, 0.1490196078);
+}
 
 header {
 
@@ -74,7 +87,7 @@ main {
     text-align: center;
     align-items: center;
     height: 179px;
-    margin: 33px 27.62%;
+    margin: 33px 0;
     width: 100%;
     
     h1 {
@@ -128,6 +141,8 @@ main {
 
     &__menu {
         height: 72.38px;
+        position: sticky;
+        left: 13.37%;
     }
 
     &__bal1, &__bal2, &__bal3 {
@@ -167,14 +182,12 @@ main {
             color: #7E7E7E;
             width: 27.73%;
             height: 72.38px;
-            position: relative;
-            top: 25px;
-            left: 11.34%;
-            font-size: 18px;
-            right: 44px;
-            
-            &:hover {
-                color: #9356DC;
+
+            &.fa-solid {
+                display: flex;
+                justify-content: center;
+                position: relative;
+                top: 25px;
             }
         }
 
@@ -186,6 +199,14 @@ main {
             font-weight: 500;
             font-size: 16px;
             color: #000000;
+                        
+            &:hover {
+            
+                i {
+                color: #9356DC;
+                }
+            }
+
         }
     }
 
