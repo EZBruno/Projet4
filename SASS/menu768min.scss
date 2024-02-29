@@ -108,7 +108,6 @@
                         background: linear-gradient(193.33deg, #9356DC -11.44%, #FF79DA 123.93%);
                         @include webkit;
                         animation: like 1.2s;
-                        animation-timing-function: 3s;
                         }           
                 }
             }
@@ -158,6 +157,9 @@
                         height: 19px;
                         font-weight: 300;
                         font-size: 15px;
+                        white-space: nowrap;
+                        overflow: hidden;
+                        text-overflow: ellipsis;
                     }
 
                 }
@@ -171,11 +173,23 @@
                 }
             }
         }
+        
+        .entrees {
+            animation: test 2s backwards;
+        }
+
+        .plats {
+            animation: test 2s 0.75s backwards;
+        }
+
+        .desserts {
+            animation: test 2s 1.5s backwards;
+        }
 
         .btncommand {
             width: 186px;
             height: 50px;
-            background: linear-gradient(193.33deg, #9356DC -11.44%, #FF79DA 123.93%);
+            background: linear-gradient(353.33deg, #9356DC -11.44%, #FF79DA 123.93%);
             box-shadow: 0px 4px 10px 0px rgba(0, 0, 0, 0.25);
             border-radius: 25px;
             border: none;
@@ -185,6 +199,14 @@
             display: flex;
             align-items: center;
             justify-content: center;
+
+            &:hover {
+                transform: scale(1.01) translate(1px, 0.7px);
+                transition: transform 300ms ease-out;
+                box-shadow: 0px 5px 12px 0px rgba(0, 0, 0, 0.25);
+                opacity: 0.8;
+            }
+
         }
 
     }

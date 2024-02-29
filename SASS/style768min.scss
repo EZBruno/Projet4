@@ -115,11 +115,18 @@ main {
         display: flex;
         align-items: center;
         justify-content: center;
-        background: linear-gradient(193.33deg, #9356DC -11.44%, #FF79DA 123.93%);
+        background: linear-gradient(353.33deg, #9356DC -11.44%, #FF79DA 123.93%);
         box-shadow: 0px 4px 10px 0px rgba(0, 0, 0, 0.25);
         border-radius: 25px;
         width: 218px;
         height: 50px;
+
+        &:hover {
+            transform: scale(1.01) translate(1px, 0.7px);
+            transition: transform 300ms ease-out;
+            box-shadow: 0px 5px 12px 0px rgba(0, 0, 0, 0.25);
+            opacity: 0.8;
+        }
 
     }
 
@@ -344,15 +351,16 @@ main {
 
                 .fa-heart {
                     display: flex;
+                    justify-content: center;
                     position: relative;
                     top: -45px;
                     left: 86.17%;
                     font-size: 22px;
-                    width: 22px;
+                    width: 25px;
                     
                     &:hover {     
                         font-weight: bold;
-                        animation: like 500ms;
+                        animation: like 1.2s;
                         background: linear-gradient(193.33deg, #9356DC -11.44%, #FF79DA 123.93%);
                         @include webkit;
                     }    
@@ -363,15 +371,16 @@ main {
 
                 .fa-heart {
                     display: flex;
+                    justify-content: center;
                     position: relative;
                     top: -20px;
                     left: 86.17%;
                     font-size: 22px;
-                    width: 22px;
+                    width: 25px;
 
                     &:hover {
                     font-weight: bold;
-                    animation: like 500ms;
+                    animation: like 1.2s;
                     background: linear-gradient(193.33deg, #9356DC -11.44%, #FF79DA 123.93%);
                     @include webkit;
 
@@ -396,6 +405,11 @@ footer {
     align-items: flex-end;
     gap: 16px;
     padding: 30px 0;
+
+    a {
+        text-decoration: none;
+        color: white;
+    }
 
     h1 {
         height: 27px;

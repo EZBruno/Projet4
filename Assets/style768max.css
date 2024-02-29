@@ -1,9 +1,4 @@
 @charset "UTF-8";
-body {
-  font-family: "Roboto", sans-serif;
-  background: #F6F6F6;
-}
-
 @keyframes like {
   from {
     opacity: 0.3;
@@ -12,6 +7,49 @@ body {
     opacity: 1;
   }
 }
+@keyframes loading {
+  0% {
+    transform: rotate(0deg) scale(0.5);
+    border-bottom-color: rgb(147, 86, 220);
+  }
+  100% {
+    transform: rotate(360deg) scale(0.5);
+    border-top-color: rgb(147, 86, 220);
+    visibility: hidden;
+  }
+}
+@keyframes timehide {
+  from {
+    visibility: visible;
+  }
+  to {
+    visibility: hidden;
+  }
+}
+body {
+  font-family: "Roboto", sans-serif;
+  background: #F6F6F6;
+}
+body .load {
+  animation: timehide 1.5s forwards;
+  z-index: 1;
+  background-color: white;
+  position: fixed;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100%;
+  width: 100%;
+}
+body .load .loader {
+  z-index: 9999;
+  height: 100px;
+  width: 100px;
+  border: 15px solid white;
+  border-radius: 50%;
+  animation: loading 1.5s;
+}
+
 @media only screen and (max-width: 768px) {
   header {
     height: 113px;
@@ -92,11 +130,17 @@ body {
     display: flex;
     align-items: center;
     justify-content: center;
-    background: linear-gradient(193.33deg, #9356DC -11.44%, #FF79DA 123.93%);
+    background: linear-gradient(353.33deg, #9356DC -11.44%, #FF79DA 123.93%);
     box-shadow: 0px 4px 10px 0px rgba(0, 0, 0, 0.25);
     border-radius: 25px;
     width: 218px;
     height: 50px;
+  }
+  .firstparty .restaubtn:active {
+    transform: scale(1.01) translate(1px, 0.7px);
+    transition: transform 300ms ease-out;
+    box-shadow: 0px 5px 12px 0px rgba(0, 0, 0, 0.25);
+    opacity: 0.8;
   }
   .fonct {
     width: 100%;
@@ -279,13 +323,14 @@ body {
   }
   .restaurantsection .resto__cont .newheart .fa-heart {
     display: flex;
+    justify-content: center;
     position: relative;
     top: -45px;
     left: 86.17%;
     font-size: 22px;
-    width: 22px;
+    width: 25px;
   }
-  .restaurantsection .resto__cont .newheart .fa-heart:hover {
+  .restaurantsection .resto__cont .newheart .fa-heart:active {
     font-weight: bold;
     animation: like 1.2s;
     background: linear-gradient(193.33deg, #9356DC -11.44%, #FF79DA 123.93%);
@@ -294,19 +339,19 @@ body {
   }
   .restaurantsection .resto__cont .heart .fa-heart {
     display: flex;
+    justify-content: center;
     position: relative;
     top: -20px;
     left: 86.17%;
     font-size: 22px;
-    width: 22px;
+    width: 25px;
   }
-  .restaurantsection .resto__cont .heart .fa-heart:hover {
+  .restaurantsection .resto__cont .heart .fa-heart:active {
     font-weight: bold;
     background: linear-gradient(193.33deg, #9356DC -11.44%, #FF79DA 123.93%);
     -webkit-background-clip: text; /* Limitez le dégradé au texte */
     -webkit-text-fill-color: transparent; /* Rendez le texte transparent */
     animation: like 1.2s;
-    animation-timing-function: 3s;
   }
   footer {
     position: absolute;
@@ -320,6 +365,10 @@ body {
     justify-content: center;
     gap: 16px;
     padding: 22px 25px 22px 25px;
+  }
+  footer a {
+    text-decoration: none;
+    color: white;
   }
   footer h1 {
     height: 27px;

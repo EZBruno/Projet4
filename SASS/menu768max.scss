@@ -18,6 +18,17 @@ body {
     }
 }
 
+@keyframes test {
+    0% {
+        opacity: 0;
+    }
+
+    100% {
+        opacity: 1;
+    }
+}
+
+
 @media only screen and (max-width: 768px) {
     
     header {
@@ -91,12 +102,11 @@ body {
                     display: flex;
                     justify-content: center;
 
-                    &:hover {
+                    &:active {
                         font-weight: bold;
                         background: linear-gradient(193.33deg, #9356DC -11.44%, #FF79DA 123.93%);
                         @include webkit;
                         animation: like 1.2s;
-                        animation-timing-function: 3s;
                         }           
                 }
             }
@@ -145,6 +155,10 @@ body {
                     p{
                         font-weight: 300;
                         font-size: 14px;
+                        white-space: nowrap;
+                        overflow: hidden;
+                        text-overflow: ellipsis;
+
                     }
 
                 }
@@ -159,10 +173,22 @@ body {
             }
         }
 
+        .entrees {
+            animation: test 2s backwards;
+        }
+
+        .plats {
+            animation: test 2s 0.75s backwards;
+        }
+
+        .desserts {
+            animation: test 2s 1.5s backwards;
+        }
+
         .btncommand {
             width: 186px;
             height: 50px;
-            background: linear-gradient(193.33deg, #9356DC -11.44%, #FF79DA 123.93%);
+            background: linear-gradient(353.33deg, #9356DC -11.44%, #FF79DA 123.93%);
             box-shadow: 0px 4px 10px 0px rgba(0, 0, 0, 0.25);
             border-radius: 25px;
             border: none;
@@ -172,13 +198,20 @@ body {
             display: flex;
             align-items: center;
             justify-content: center;
+
+            &:active {
+                transform: scale(1.01) translate(1px, 0.7px);
+                transition: transform 300ms ease-out;
+                box-shadow: 0px 5px 12px 0px rgba(0, 0, 0, 0.25);
+                opacity: 0.8;
+            }
         }
 
     }
 
     footer {
         position: relative;
-        top: 1422px;
+        top: 1352px;
         height: 186px;
         width: calc(100% - 25px);
         background-color: #353535;
@@ -219,10 +252,12 @@ body {
                 font-weight: 400;
             }
         }
+
+        &.fourft {
+            position: absolute;
+            top: 1491px;
+        }
     
     }
     
-    .fourft {
-        top: calc(315px + 1130px + 40px);
-    }
 }

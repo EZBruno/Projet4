@@ -22,7 +22,7 @@
     <title>La note enchantée</title>
   </head>
   <body>
-    <div class="widthblock" id="page">
+    <div class="widthblock">
       <header>
         <a href="../index.html">
           <i class="fa-solid fa-arrow-left"></i>
@@ -38,11 +38,11 @@
           alt="Image du menu"
         />
       </header>
-      <main>
+      <main id="page">
         <div class="maintitle">
           <h1>La note enchantée<i class="fa-regular fa-heart"></i></h1>
         </div>
-        <article class="art">
+        <article class="art entrees">
           <h2>ENTRÉES</h2>
           <div class="art__ent">
             <div class="art__ent--text">
@@ -73,7 +73,7 @@
             <a>35€</a>
           </div>
         </article>
-        <article class="art">
+        <article class="art plats">
           <h2>PLATS</h2>
           <div class="art__ent">
             <div class="art__ent--text">
@@ -97,7 +97,7 @@
             <a>45€</a>
           </div>
         </article>
-        <article class="art">
+        <article class="art desserts">
           <h2>DESSERTS</h2>
           <div class="art__ent">
             <div class="art__ent--text">
@@ -123,20 +123,23 @@
         </article>
         <button class="btncommand">Commander</button>
       </main>
-      <footer>
+      <footer class="fourft">
         <h1><a href="#page">ohmyfood</a></h1>
         <div>
           <p class="i">
-            <a href="#page"><i class="fa-solid fa-utensils"></i>Proposer un restaurant</a>
+            <a href="#page"
+              ><i class="fa-solid fa-utensils"></i>Proposer un restaurant</a
+            >
           </p>
           <p class="i">
-            <a href="#page"><i class="fa-solid fa-handshake"></i>Devenir partenaire</a>
+            <a href="#page"
+              ><i class="fa-solid fa-handshake"></i>Devenir partenaire</a
+            >
           </p>
-          <p class="p p1"><a href="#page">Mentions légales</p>
-          <!-- Mettre un lien contact -->
-          <p class="p"><a href="#page">Contact</a></p>
+          <p class="p p1"><a href="#page">Mentions légales</a></p>
+          <a href="mailto:contact@ohmyfood.fr"><p class="p">Contact</p></a>
         </div>
       </footer>
-      </div>
+    </div>
   </body>
 </html>

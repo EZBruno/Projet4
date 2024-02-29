@@ -12,6 +12,14 @@ body {
     opacity: 1;
   }
 }
+@keyframes test {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
 @media only screen and (max-width: 768px) {
   header {
     display: flex;
@@ -76,13 +84,12 @@ body {
     display: flex;
     justify-content: center;
   }
-  main .maintitle h1 .fa-heart:hover {
+  main .maintitle h1 .fa-heart:active {
     font-weight: bold;
     background: linear-gradient(193.33deg, #9356DC -11.44%, #FF79DA 123.93%);
     -webkit-background-clip: text; /* Limitez le dégradé au texte */
     -webkit-text-fill-color: transparent; /* Rendez le texte transparent */
     animation: like 1.2s;
-    animation-timing-function: 3s;
   }
   main .art {
     width: 93.07%;
@@ -125,6 +132,9 @@ body {
   main .art__ent--text p {
     font-weight: 300;
     font-size: 14px;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
   }
   main .art__ent a {
     height: 42px;
@@ -133,10 +143,19 @@ body {
     font-size: 15.04px;
     font-weight: 700;
   }
+  main .entrees {
+    animation: test 2s backwards;
+  }
+  main .plats {
+    animation: test 2s 0.75s backwards;
+  }
+  main .desserts {
+    animation: test 2s 1.5s backwards;
+  }
   main .btncommand {
     width: 186px;
     height: 50px;
-    background: linear-gradient(193.33deg, #9356DC -11.44%, #FF79DA 123.93%);
+    background: linear-gradient(353.33deg, #9356DC -11.44%, #FF79DA 123.93%);
     box-shadow: 0px 4px 10px 0px rgba(0, 0, 0, 0.25);
     border-radius: 25px;
     border: none;
@@ -147,9 +166,15 @@ body {
     align-items: center;
     justify-content: center;
   }
+  main .btncommand:active {
+    transform: scale(1.01) translate(1px, 0.7px);
+    transition: transform 300ms ease-out;
+    box-shadow: 0px 5px 12px 0px rgba(0, 0, 0, 0.25);
+    opacity: 0.8;
+  }
   footer {
     position: relative;
-    top: 1422px;
+    top: 1352px;
     height: 186px;
     width: calc(100% - 25px);
     background-color: #353535;
@@ -186,8 +211,9 @@ body {
   footer div .p {
     font-weight: 400;
   }
-  .fourft {
-    top: 1485px;
+  footer.fourft {
+    position: absolute;
+    top: 1491px;
   }
 }
 
