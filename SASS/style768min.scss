@@ -1,3 +1,8 @@
+@mixin webkit {
+    -webkit-background-clip: text;        /* Limitez le dégradé au texte */
+    -webkit-text-fill-color: transparent; /* Rendez le texte transparent */
+}
+
 body {
     font-family: 'Roboto', sans-serif;
     background: #F6F6F6;
@@ -336,19 +341,42 @@ main {
             }
 
             .newheart {
-                position: relative;
-                top: -45px;
-                left: 86.17%;
-                font-size: 22px;
-                width: 22px;
+
+                .fa-heart {
+                    display: flex;
+                    position: relative;
+                    top: -45px;
+                    left: 86.17%;
+                    font-size: 22px;
+                    width: 22px;
+                    
+                    &:hover {     
+                        font-weight: bold;
+                        animation: like 500ms;
+                        background: linear-gradient(193.33deg, #9356DC -11.44%, #FF79DA 123.93%);
+                        @include webkit;
+                    }    
+                }
             }
 
             .heart {
-                position: relative;
-                top: -20px;
-                left: 86.17%;
-                font-size: 22px;
-                width: 22px;
+
+                .fa-heart {
+                    display: flex;
+                    position: relative;
+                    top: -20px;
+                    left: 86.17%;
+                    font-size: 22px;
+                    width: 22px;
+
+                    &:hover {
+                    font-weight: bold;
+                    animation: like 500ms;
+                    background: linear-gradient(193.33deg, #9356DC -11.44%, #FF79DA 123.93%);
+                    @include webkit;
+
+                    }
+                }
             }
 
         }

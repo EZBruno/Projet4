@@ -1,3 +1,8 @@
+@mixin webkit {
+    -webkit-background-clip: text;        /* Limitez le dégradé au texte */
+    -webkit-text-fill-color: transparent; /* Rendez le texte transparent */
+}
+
 @media only screen and (min-width: 769px) {
 
     body {
@@ -92,8 +97,19 @@
                 justify-content: space-between;
                 align-items: center;
 
-                i {
+                .fa-heart {
                     font-size: 22px;
+                    width: 24px;
+                    display: flex;
+                    justify-content: center;
+
+                    &:hover {
+                        font-weight: bold;
+                        background: linear-gradient(193.33deg, #9356DC -11.44%, #FF79DA 123.93%);
+                        @include webkit;
+                        animation: like 1.2s;
+                        animation-timing-function: 3s;
+                        }           
                 }
             }
         }
@@ -176,8 +192,8 @@
     footer {
         position: relative;
         top: 344px;
-        height: calc(114px - 60px);
         width: 100%;
+        height: calc(114px - 60px);
         background-color: #353535;
         color: white;
         display: flex;
@@ -185,7 +201,12 @@
         align-items: flex-end;
         gap: 16px;
         padding: 30px 0;
-    
+          
+        a {
+            text-decoration: none;
+            color: white;
+        }
+
         h1 {
             height: 27px;
             font-family: Shrikhand;
@@ -197,7 +218,7 @@
             position: relative;
             right: 25px;
         }
-    
+        
         div {
             height: calc(114px - 60px);
             display: flex;
@@ -206,31 +227,31 @@
             gap: 7px;
             font-size: 16px;
             position: relative;
-            right: 25px;
-    
+            right: 10.6%;
+            
             .i {
                 font-weight: 500;
                 width: 190px;
                 height: 19px;
             }
-    
+            
             .p {
                 width: 60px;
-                height: 17px;
+                height: 18.9px;
             }
-    
+            
             .p1 {
                 width: 130px;
             }
-    
+            
             .fa-utensils {
                 font-size: 12px;
             }
-    
+            
             .fa-handshake {
                 font-size: 12.5px;
             }
-        }
+    }
     
     }
 }

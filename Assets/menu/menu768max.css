@@ -1,8 +1,17 @@
+@charset "UTF-8";
 body {
   font-family: "Roboto", sans-serif;
   background: #F6F6F6;
 }
 
+@keyframes like {
+  from {
+    opacity: 0.3;
+  }
+  to {
+    opacity: 1;
+  }
+}
 @media only screen and (max-width: 768px) {
   header {
     display: flex;
@@ -61,8 +70,19 @@ body {
     justify-content: space-between;
     align-items: center;
   }
-  main .maintitle h1 i {
+  main .maintitle h1 .fa-heart {
     font-size: 22px;
+    width: 24px;
+    display: flex;
+    justify-content: center;
+  }
+  main .maintitle h1 .fa-heart:hover {
+    font-weight: bold;
+    background: linear-gradient(193.33deg, #9356DC -11.44%, #FF79DA 123.93%);
+    -webkit-background-clip: text; /* Limitez le dégradé au texte */
+    -webkit-text-fill-color: transparent; /* Rendez le texte transparent */
+    animation: like 1.2s;
+    animation-timing-function: 3s;
   }
   main .art {
     width: 93.07%;
@@ -139,6 +159,10 @@ body {
     justify-content: center;
     gap: 16px;
     padding-left: 25px;
+  }
+  footer a {
+    text-decoration: none;
+    color: white;
   }
   footer h1 {
     height: 27px;

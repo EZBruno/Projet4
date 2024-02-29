@@ -1,8 +1,17 @@
+@charset "UTF-8";
 body {
   font-family: "Roboto", sans-serif;
   background: #F6F6F6;
 }
 
+@keyframes like {
+  from {
+    opacity: 0.3;
+  }
+  to {
+    opacity: 1;
+  }
+}
 @media only screen and (max-width: 768px) {
   header {
     height: 113px;
@@ -174,7 +183,7 @@ body {
   .restaurantsection .title {
     position: absolute;
     top: 894px;
-    left: 20px;
+    left: 4.7%;
     height: 68px;
     width: 275px;
     font-weight: 700;
@@ -242,6 +251,7 @@ body {
     font-size: 18px;
     left: 13px;
     text-decoration: none;
+    max-width: 250px;
   }
   .restaurantsection .resto__cont--titlenew {
     position: relative;
@@ -249,6 +259,7 @@ body {
     font-weight: 700;
     font-size: 18px;
     left: 13px;
+    max-width: 250px;
   }
   .restaurantsection .resto__cont--name {
     position: relative;
@@ -256,6 +267,7 @@ body {
     font-weight: 300;
     top: 20px;
     left: 13px;
+    max-width: 250px;
   }
   .restaurantsection .resto__cont--namenew {
     position: relative;
@@ -263,20 +275,38 @@ body {
     font-weight: 300;
     top: -10px;
     left: 13px;
+    max-width: 250px;
   }
-  .restaurantsection .resto__cont .newheart {
+  .restaurantsection .resto__cont .newheart .fa-heart {
+    display: flex;
     position: relative;
     top: -45px;
     left: 86.17%;
     font-size: 22px;
     width: 22px;
   }
-  .restaurantsection .resto__cont .heart {
+  .restaurantsection .resto__cont .newheart .fa-heart:hover {
+    font-weight: bold;
+    animation: like 1.2s;
+    background: linear-gradient(193.33deg, #9356DC -11.44%, #FF79DA 123.93%);
+    -webkit-background-clip: text; /* Limitez le dégradé au texte */
+    -webkit-text-fill-color: transparent; /* Rendez le texte transparent */
+  }
+  .restaurantsection .resto__cont .heart .fa-heart {
+    display: flex;
     position: relative;
     top: -20px;
     left: 86.17%;
     font-size: 22px;
     width: 22px;
+  }
+  .restaurantsection .resto__cont .heart .fa-heart:hover {
+    font-weight: bold;
+    background: linear-gradient(193.33deg, #9356DC -11.44%, #FF79DA 123.93%);
+    -webkit-background-clip: text; /* Limitez le dégradé au texte */
+    -webkit-text-fill-color: transparent; /* Rendez le texte transparent */
+    animation: like 1.2s;
+    animation-timing-function: 3s;
   }
   footer {
     position: absolute;

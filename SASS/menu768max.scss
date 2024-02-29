@@ -3,6 +3,21 @@ body {
     background: #F6F6F6;
 }
 
+@mixin webkit {
+    -webkit-background-clip: text;        /* Limitez le dégradé au texte */
+    -webkit-text-fill-color: transparent; /* Rendez le texte transparent */
+}
+
+@keyframes like {
+    from {
+        opacity: 0.3;
+    }
+
+    to {
+        opacity: 1;
+    }
+}
+
 @media only screen and (max-width: 768px) {
     
     header {
@@ -70,8 +85,19 @@ body {
                 justify-content: space-between;
                 align-items: center;
 
-                i {
+                .fa-heart {
                     font-size: 22px;
+                    width: 24px;
+                    display: flex;
+                    justify-content: center;
+
+                    &:hover {
+                        font-weight: bold;
+                        background: linear-gradient(193.33deg, #9356DC -11.44%, #FF79DA 123.93%);
+                        @include webkit;
+                        animation: like 1.2s;
+                        animation-timing-function: 3s;
+                        }           
                 }
             }
         }
@@ -162,6 +188,11 @@ body {
         justify-content: center;
         gap: 16px;
         padding-left: 25px;
+
+        a {
+            text-decoration: none;
+            color: white;
+        }
     
         h1 {
             height: 27px;
