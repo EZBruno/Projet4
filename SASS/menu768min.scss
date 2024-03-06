@@ -96,6 +96,7 @@
                 display: flex;
                 justify-content: space-between;
                 align-items: center;
+                white-space: nowrap;
 
                 .fa-heart {
                     font-size: 22px;
@@ -122,13 +123,23 @@
             flex-direction: column;
 
             h2 {
-                width: 40px;
+                display: flex;
+                width: 78.8%;
                 height: 27px;
                 font-weight: 300;
                 font-size: 16px;
-                border-bottom: 3px solid #99E2D0;
-                border-spacing: 27px;
+                position: relative;
             }    
+
+            h2::after {
+                content: "";
+                position: absolute;
+                width: 40px;
+                height: 3px;
+                left: 0;
+                bottom: 0;
+                background-color: #99E2D0;
+            }
 
             &__ent {
                 display: flex;
@@ -147,10 +158,12 @@
                     flex-direction: column;
                     justify-content: center;
                     gap: 5px;
+                    padding: 15px;
 
                     h3 {
                         font-size: 18px;
                         height: 21px;
+                        min-width: 340px;
                     }
 
                     p{
@@ -168,24 +181,33 @@
                     height: 42px;
                     display: flex;
                     align-items: end;
+                    justify-content: flex-end;
                     font-size: 15.04px;
                     font-weight: 700;
+                    position: relative;
+                    right: 15px;
+                    width: 22.58%;
                 }
+
+                button {
+                    display: none;
+                }
+
             }
         }
         
         .entrees {
-            animation: test 2s backwards;
+            animation: menudef 1.5s backwards;
         }
 
         .plats {
-            animation: test 2s 0.75s backwards;
+            animation: menudef 1.5s 0.5s backwards;
         }
 
         .desserts {
-            animation: test 2s 1.5s backwards;
+            animation: menudef 1.5s 1s backwards;
         }
-
+        
         .btncommand {
             width: 186px;
             height: 50px;

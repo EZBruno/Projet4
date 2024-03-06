@@ -12,7 +12,7 @@ body {
     opacity: 1;
   }
 }
-@keyframes test {
+@keyframes menudef {
   0% {
     opacity: 0;
   }
@@ -77,10 +77,11 @@ body {
     display: flex;
     justify-content: space-between;
     align-items: center;
+    white-space: nowrap;
   }
   main .maintitle h1 .fa-heart {
     font-size: 22px;
-    width: 24px;
+    width: 22.58%;
     display: flex;
     justify-content: center;
   }
@@ -100,34 +101,49 @@ body {
     flex-direction: column;
   }
   main .art h2 {
-    width: 40px;
+    display: flex;
+    width: 78.8%;
     height: 27px;
     font-weight: 300;
     font-size: 16px;
-    border-bottom: 3px solid #99E2D0;
-    border-spacing: 27px;
+    position: relative;
+  }
+  main .art h2::after {
+    content: "";
+    position: absolute;
+    width: 40px;
+    height: 3px;
+    left: 0;
+    bottom: 0;
+    background-color: #99E2D0;
   }
   main .art__ent {
     display: flex;
-    justify-content: center;
     align-items: center;
     width: 100%;
     height: 69px;
     border-radius: 15.04px;
     background-color: white;
     box-shadow: 0px 4.0114941597px 15.0431032181px 0px rgba(0, 0, 0, 0.1019607843);
+    overflow: hidden;
   }
   main .art__ent--text {
-    width: 82.23%;
     height: 42px;
     display: flex;
     flex-direction: column;
     justify-content: center;
     gap: 5px;
+    padding: 15px;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
   }
   main .art__ent--text h3 {
     font-size: 15.6px;
     height: 21px;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
   }
   main .art__ent--text p {
     font-weight: 300;
@@ -138,19 +154,49 @@ body {
   }
   main .art__ent a {
     height: 42px;
-    display: flex;
-    align-items: end;
     font-size: 15.04px;
     font-weight: 700;
+    margin-left: auto;
+    padding-top: 50px;
+    padding-right: 15px;
+  }
+  main .art__ent .btn {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-width: 59px;
+    height: 100%;
+    border-radius: 0px 15px 15px 0px;
+    background: rgb(153, 226, 208);
+    border: none;
+    transition: all 0.5s;
+    margin-right: -59px;
+  }
+  main .art__ent .btn i {
+    display: flex;
+    align-items: end;
+    justify-content: center;
+    background-color: white;
+    color: rgb(153, 226, 208);
+    border-radius: 50%;
+    width: 20px;
+    height: 20px;
+    font-size: 14px;
+  }
+  main .art__ent:active .btn {
+    margin-right: 0;
+  }
+  main .art__ent:hover {
+    cursor: pointer;
   }
   main .entrees {
-    animation: test 2s backwards;
+    animation: menudef 1.5s backwards;
   }
   main .plats {
-    animation: test 2s 0.75s backwards;
+    animation: menudef 1.5s 0.5s backwards;
   }
   main .desserts {
-    animation: test 2s 1.5s backwards;
+    animation: menudef 1.5s 1s backwards;
   }
   main .btncommand {
     width: 186px;

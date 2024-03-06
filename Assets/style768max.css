@@ -42,7 +42,6 @@ body .load {
   width: 100%;
 }
 body .load .loader {
-  z-index: 9999;
   height: 100px;
   width: 100px;
   border: 15px solid white;
