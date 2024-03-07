@@ -96,7 +96,6 @@
                 display: flex;
                 justify-content: space-between;
                 align-items: center;
-                white-space: nowrap;
 
                 .fa-heart {
                     font-size: 22px;
@@ -108,8 +107,8 @@
                         font-weight: bold;
                         background: linear-gradient(193.33deg, #9356DC -11.44%, #FF79DA 123.93%);
                         @include webkit;
-                        animation: like 1.2s;
-                        }           
+                        animation: like 3.2s;
+                        }
                 }
             }
         }
@@ -125,7 +124,7 @@
             h2 {
                 display: flex;
                 width: 78.8%;
-                height: 27px;
+                height: 30px;
                 font-weight: 300;
                 font-size: 16px;
                 position: relative;
@@ -136,6 +135,7 @@
                 position: absolute;
                 width: 40px;
                 height: 3px;
+                bottom: 3px;
                 left: 0;
                 bottom: 0;
                 background-color: #99E2D0;
@@ -143,71 +143,101 @@
 
             &__ent {
                 display: flex;
-                justify-content: center;
                 align-items: center;
                 width: 100%;
                 height: 69px;
                 border-radius: 15.04px;
                 background-color: white;
                 box-shadow: 0px 4.011494159698486px 15.043103218078613px 0px #0000001A;
+                overflow: hidden;
 
                 &--text {
-                    width: 82.23%;
                     height: 42px;
                     display: flex;
                     flex-direction: column;
                     justify-content: center;
                     gap: 5px;
                     padding: 15px;
+                    white-space: nowrap;
+                    overflow: hidden;
+                    text-overflow: ellipsis;
+
 
                     h3 {
-                        font-size: 18px;
+                        font-size: 15.6px;
                         height: 21px;
-                        min-width: 340px;
+                        white-space: nowrap;
+                        overflow: hidden;
+                        text-overflow: ellipsis;    
                     }
 
                     p{
-                        height: 19px;
                         font-weight: 300;
-                        font-size: 15px;
+                        font-size: 14px;
                         white-space: nowrap;
                         overflow: hidden;
-                        text-overflow: ellipsis;
+                        text-overflow: ellipsis;    
                     }
 
                 }
 
                 a {
                     height: 42px;
-                    display: flex;
-                    align-items: end;
-                    justify-content: flex-end;
                     font-size: 15.04px;
                     font-weight: 700;
-                    position: relative;
-                    right: 15px;
-                    width: 22.58%;
+                    margin-left: auto;
+                    padding-top: 50px;
+                    padding-right: 15px;
+                }
+                
+                .btn {
+                    display: flex;
+                    align-items: center;
+                    justify-content: center;
+                    min-width: 59px;
+                    height: 100%;
+                    border-radius: 0px 15px 15px 0px;
+                    background: rgba(153, 226, 208, 1);
+                    border: none;
+                    transition: all 0.5s;
+                    margin-right: -59px;
+
+                    i {
+                        display: flex;
+                        line-height: 20px;
+                        justify-content: center;
+                        background-color: white;
+                        color: rgba(153, 226, 208, 1);
+                        border-radius: 50%;
+                        width: 20px;
+                        height: 20px;
+                        font-size: 14px;
+                    }
                 }
 
-                button {
-                    display: none;
-                }
 
+                &:active {
+
+                    .btn {
+                        margin-right: 0;
+                    }
+
+                }
             }
         }
         
         .entrees {
-            animation: menudef 1.5s backwards;
+            animation: test 2s backwards;
         }
 
         .plats {
-            animation: menudef 1.5s 0.5s backwards;
+            animation: test 2s 0.75s backwards;
         }
 
         .desserts {
-            animation: menudef 1.5s 1s backwards;
+            animation: test 2s 1.5s backwards;
         }
-        
+
         .btncommand {
             width: 186px;
             height: 50px;
@@ -221,10 +251,11 @@
             display: flex;
             align-items: center;
             justify-content: center;
+            transition: all 0.3s;
 
             &:hover {
                 transform: scale(1.01) translate(1px, 0.7px);
-                transition: transform 300ms ease-out;
+                transition: transform 0.3s ease-out;
                 box-shadow: 0px 5px 12px 0px rgba(0, 0, 0, 0.25);
                 opacity: 0.8;
             }

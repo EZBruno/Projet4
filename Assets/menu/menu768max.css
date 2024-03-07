@@ -6,13 +6,13 @@ body {
 
 @keyframes like {
   from {
-    opacity: 0.3;
+    opacity: 0.2;
   }
   to {
     opacity: 1;
   }
 }
-@keyframes menudef {
+@keyframes test {
   0% {
     opacity: 0;
   }
@@ -81,16 +81,17 @@ body {
   }
   main .maintitle h1 .fa-heart {
     font-size: 22px;
-    width: 22.58%;
+    width: 24px;
     display: flex;
     justify-content: center;
   }
   main .maintitle h1 .fa-heart:active {
+    animation: like 2s;
     font-weight: bold;
     background: linear-gradient(193.33deg, #9356DC -11.44%, #FF79DA 123.93%);
-    -webkit-background-clip: text; /* Limitez le dégradé au texte */
-    -webkit-text-fill-color: transparent; /* Rendez le texte transparent */
-    animation: like 1.2s;
+    -webkit-background-clip: text; /* Limiter le dégradé au texte */
+    -webkit-text-fill-color: transparent; /* Rendre le texte transparent */
+    background-clip: text;
   }
   main .art {
     width: 93.07%;
@@ -103,7 +104,7 @@ body {
   main .art h2 {
     display: flex;
     width: 78.8%;
-    height: 27px;
+    height: 30px;
     font-weight: 300;
     font-size: 16px;
     position: relative;
@@ -113,6 +114,7 @@ body {
     position: absolute;
     width: 40px;
     height: 3px;
+    bottom: 3px;
     left: 0;
     bottom: 0;
     background-color: #99E2D0;
@@ -174,7 +176,7 @@ body {
   }
   main .art__ent .btn i {
     display: flex;
-    align-items: end;
+    line-height: 20px;
     justify-content: center;
     background-color: white;
     color: rgb(153, 226, 208);
@@ -186,17 +188,14 @@ body {
   main .art__ent:active .btn {
     margin-right: 0;
   }
-  main .art__ent:hover {
-    cursor: pointer;
-  }
   main .entrees {
-    animation: menudef 1.5s backwards;
+    animation: test 2s backwards;
   }
   main .plats {
-    animation: menudef 1.5s 0.5s backwards;
+    animation: test 2s 0.75s backwards;
   }
   main .desserts {
-    animation: menudef 1.5s 1s backwards;
+    animation: test 2s 1.5s backwards;
   }
   main .btncommand {
     width: 186px;
@@ -211,10 +210,11 @@ body {
     display: flex;
     align-items: center;
     justify-content: center;
+    transition: all 0.3s;
   }
   main .btncommand:active {
     transform: scale(1.01) translate(1px, 0.7px);
-    transition: transform 300ms ease-out;
+    transition: transform 0.3s ease-out;
     box-shadow: 0px 5px 12px 0px rgba(0, 0, 0, 0.25);
     opacity: 0.8;
   }
