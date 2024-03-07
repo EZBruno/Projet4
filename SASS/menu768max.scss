@@ -4,13 +4,15 @@ body {
 }
 
 @mixin webkit {
-    -webkit-background-clip: text;        /* Limitez le dégradé au texte */
-    -webkit-text-fill-color: transparent; /* Rendez le texte transparent */
+    -webkit-background-clip: text;        /* Limiter le dégradé au texte */
+    -webkit-text-fill-color: transparent; /* Rendre le texte transparent */
+     background-clip: text;
 }
 
 @keyframes like {
+
     from {
-        opacity: 0.3;
+        opacity: 0.2;
     }
 
     to {
@@ -18,7 +20,8 @@ body {
     }
 }
 
-@keyframes menudef {
+
+@keyframes test {
     0% {
         opacity: 0;
     }
@@ -85,6 +88,8 @@ body {
             
             width: 90.93%;
 
+
+
             h1 {
                 font-family: shrikhand;
                 font-weight: 400;
@@ -99,16 +104,18 @@ body {
 
                 .fa-heart {
                     font-size: 22px;
-                    width: 22.58%;
+                    width: 24px;
                     display: flex;
                     justify-content: center;
 
-                    &:active {
-                        font-weight: bold;
-                        background: linear-gradient(193.33deg, #9356DC -11.44%, #FF79DA 123.93%);
-                        @include webkit;
-                        animation: like 1.2s;
-                        }  
+                    
+                     &:active {
+                         animation: like 2s;
+                         font-weight: bold;
+                         background: linear-gradient(193.33deg, #9356DC -11.44%, #FF79DA 123.93%);
+                         @include webkit;                
+                         }   
+    
                 }
             }
         }
@@ -124,7 +131,7 @@ body {
             h2 {
                 display: flex;
                 width: 78.8%;
-                height: 27px;
+                height: 30px;
                 font-weight: 300;
                 font-size: 16px;
                 position: relative;
@@ -135,6 +142,7 @@ body {
                 position: absolute;
                 width: 40px;
                 height: 3px;
+                bottom: 3px;
                 left: 0;
                 bottom: 0;
                 background-color: #99E2D0;
@@ -161,12 +169,13 @@ body {
                     overflow: hidden;
                     text-overflow: ellipsis;
 
+
                     h3 {
                         font-size: 15.6px;
                         height: 21px;
                         white-space: nowrap;
                         overflow: hidden;
-                        text-overflow: ellipsis;
+                        text-overflow: ellipsis;    
                     }
 
                     p{
@@ -174,7 +183,7 @@ body {
                         font-size: 14px;
                         white-space: nowrap;
                         overflow: hidden;
-                        text-overflow: ellipsis;
+                        text-overflow: ellipsis;    
                     }
 
                 }
@@ -202,7 +211,7 @@ body {
 
                     i {
                         display: flex;
-                        align-items: end;
+                        line-height: 20px;
                         justify-content: center;
                         background-color: white;
                         color: rgba(153, 226, 208, 1);
@@ -221,23 +230,19 @@ body {
                     }
 
                 }
-
-                &:hover {
-                    cursor: pointer;
-                }
             }
         }
 
         .entrees {
-            animation: menudef 1.5s backwards;
+            animation: test 2s backwards;
         }
 
         .plats {
-            animation: menudef 1.5s 0.5s backwards;
+            animation: test 2s 0.75s backwards;
         }
 
         .desserts {
-            animation: menudef 1.5s 1s backwards;
+            animation: test 2s 1.5s backwards;
         }
 
         .btncommand {
@@ -253,10 +258,11 @@ body {
             display: flex;
             align-items: center;
             justify-content: center;
+            transition: all 0.3s;
 
             &:active {
                 transform: scale(1.01) translate(1px, 0.7px);
-                transition: transform 300ms ease-out;
+                transition: transform 0.3s ease-out;
                 box-shadow: 0px 5px 12px 0px rgba(0, 0, 0, 0.25);
                 opacity: 0.8;
             }

@@ -120,6 +120,7 @@ main {
         border-radius: 25px;
         width: 218px;
         height: 50px;
+        transition: all 300ms;
 
         &:hover {
             transform: scale(1.01) translate(1px, 0.7px);
