@@ -3,15 +3,6 @@
     -webkit-text-fill-color: transparent; /* Rendez le texte transparent */
 }          
     
-        @keyframes like {
-            from {
-                opacity: 0.3;
-            }
-
-            to {
-                opacity: 1;
-            }
-        }
 
         @keyframes loading {
             0% {
@@ -388,7 +379,6 @@ header {
 
             .newheart {
 
-                .fa-heart {
                     display: flex;
                     justify-content: center;
                     position: relative;
@@ -397,18 +387,27 @@ header {
                     font-size: 22px;
                     width: 25px;
                     
-                    &:active {     
-                        font-weight: bold;
-                        animation: like 1.2s;
-                        background: linear-gradient(193.33deg, #9356DC -11.44%, #FF79DA 123.93%);
-                        @include webkit;
-                    }    
+                    .two {
+                        position: absolute;
+                        opacity: 0;
+                        transition: all 1.2s;
+
+                        &:active {
+                            opacity: 1;
+                            color: transparent;
+                            background: linear-gradient(193.33deg, #9356DC -11.44%, #FF79DA 123.93%);
+                            @include webkit;
+                        }
+
+                        &:not(:active) {
+                            opacity: 0;
+                            background: linear-gradient(193.33deg, #9356DC -11.44%, #FF79DA 123.93%);
+                            @include webkit;
+                        }
+                    }
                 }
-            }
 
-            .heart {
-
-                .fa-heart {
+                .heart {
                     display: flex;
                     justify-content: center;
                     position: relative;
@@ -417,13 +416,24 @@ header {
                     font-size: 22px;
                     width: 25px;
 
-                    &:active {
-                    font-weight: bold;
-                    background: linear-gradient(193.33deg, #9356DC -11.44%, #FF79DA 123.93%);
-                    @include webkit;
-                    animation: like 1.2s;
-                    }
-                }
+                    .two {
+                        position: absolute;
+                        opacity: 0;
+                        transition: all 1.2s;
+
+                        &:active {
+                            opacity: 1;
+                            color: transparent;
+                            background: linear-gradient(193.33deg, #9356DC -11.44%, #FF79DA 123.93%);
+                            @include webkit;
+                        }
+
+                        &:not(:active) {
+                            opacity: 0;
+                            background: linear-gradient(193.33deg, #9356DC -11.44%, #FF79DA 123.93%);
+                            @include webkit;
+                        }
+                 }
             }
 
         }

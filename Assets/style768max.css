@@ -1,12 +1,4 @@
 @charset "UTF-8";
-@keyframes like {
-  from {
-    opacity: 0.3;
-  }
-  to {
-    opacity: 1;
-  }
-}
 @keyframes loading {
   0% {
     transform: rotate(0deg) scale(0.5);
@@ -322,7 +314,7 @@ body .load .loader {
     left: 13px;
     max-width: 250px;
   }
-  .restaurantsection .resto__cont .newheart .fa-heart {
+  .restaurantsection .resto__cont .newheart {
     display: flex;
     justify-content: center;
     position: relative;
@@ -331,14 +323,25 @@ body .load .loader {
     font-size: 22px;
     width: 25px;
   }
-  .restaurantsection .resto__cont .newheart .fa-heart:active {
-    font-weight: bold;
-    animation: like 1.2s;
+  .restaurantsection .resto__cont .newheart .two {
+    position: absolute;
+    opacity: 0;
+    transition: all 1.2s;
+  }
+  .restaurantsection .resto__cont .newheart .two:active {
+    opacity: 1;
+    color: transparent;
     background: linear-gradient(193.33deg, #9356DC -11.44%, #FF79DA 123.93%);
     -webkit-background-clip: text; /* Limitez le dégradé au texte */
     -webkit-text-fill-color: transparent; /* Rendez le texte transparent */
   }
-  .restaurantsection .resto__cont .heart .fa-heart {
+  .restaurantsection .resto__cont .newheart .two:not(:active) {
+    opacity: 0;
+    background: linear-gradient(193.33deg, #9356DC -11.44%, #FF79DA 123.93%);
+    -webkit-background-clip: text; /* Limitez le dégradé au texte */
+    -webkit-text-fill-color: transparent; /* Rendez le texte transparent */
+  }
+  .restaurantsection .resto__cont .heart {
     display: flex;
     justify-content: center;
     position: relative;
@@ -347,12 +350,23 @@ body .load .loader {
     font-size: 22px;
     width: 25px;
   }
-  .restaurantsection .resto__cont .heart .fa-heart:active {
-    font-weight: bold;
+  .restaurantsection .resto__cont .heart .two {
+    position: absolute;
+    opacity: 0;
+    transition: all 1.2s;
+  }
+  .restaurantsection .resto__cont .heart .two:active {
+    opacity: 1;
+    color: transparent;
     background: linear-gradient(193.33deg, #9356DC -11.44%, #FF79DA 123.93%);
     -webkit-background-clip: text; /* Limitez le dégradé au texte */
     -webkit-text-fill-color: transparent; /* Rendez le texte transparent */
-    animation: like 1.2s;
+  }
+  .restaurantsection .resto__cont .heart .two:not(:active) {
+    opacity: 0;
+    background: linear-gradient(193.33deg, #9356DC -11.44%, #FF79DA 123.93%);
+    -webkit-background-clip: text; /* Limitez le dégradé au texte */
+    -webkit-text-fill-color: transparent; /* Rendez le texte transparent */
   }
   footer {
     position: absolute;

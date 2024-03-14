@@ -348,9 +348,7 @@ main {
                 left: 13px;
             }
 
-            .newheart {
-
-                .fa-heart {
+                .newheart {
                     display: flex;
                     justify-content: center;
                     position: relative;
@@ -359,18 +357,27 @@ main {
                     font-size: 22px;
                     width: 25px;
                     
-                    &:hover {     
-                        font-weight: bold;
-                        animation: like 1.2s;
-                        background: linear-gradient(193.33deg, #9356DC -11.44%, #FF79DA 123.93%);
-                        @include webkit;
-                    }    
+                    .two {
+                        position: absolute;
+                        opacity: 0;
+                        transition: all 1.2s;
+
+                        &:hover {
+                            opacity: 1;
+                            color: transparent;
+                            background: linear-gradient(193.33deg, #9356DC -11.44%, #FF79DA 123.93%);
+                            @include webkit;
+                        }
+
+                        &:not(:hover) {
+                            opacity: 0;
+                            background: linear-gradient(193.33deg, #9356DC -11.44%, #FF79DA 123.93%);
+                            @include webkit;
+                        }
+                    }
                 }
-            }
 
-            .heart {
-
-                .fa-heart {
+                .heart {
                     display: flex;
                     justify-content: center;
                     position: relative;
@@ -379,15 +386,25 @@ main {
                     font-size: 22px;
                     width: 25px;
 
-                    &:hover {
-                    font-weight: bold;
-                    animation: like 1.2s;
-                    background: linear-gradient(193.33deg, #9356DC -11.44%, #FF79DA 123.93%);
-                    @include webkit;
+                    .two {
+                        position: absolute;
+                        opacity: 0;
+                        transition: all 1.2s;
 
+                        &:hover {
+                            opacity: 1;
+                            color: transparent;
+                            background: linear-gradient(193.33deg, #9356DC -11.44%, #FF79DA 123.93%);
+                            @include webkit;
+                        }
+
+                        &:not(:hover) {
+                            opacity: 0;
+                            background: linear-gradient(193.33deg, #9356DC -11.44%, #FF79DA 123.93%);
+                            @include webkit;
+                        }
                     }
                 }
-            }
 
         }
 

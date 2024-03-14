@@ -97,18 +97,30 @@
                 justify-content: space-between;
                 align-items: center;
 
-                .fa-heart {
+                .heart {
                     font-size: 22px;
                     width: 24px;
                     display: flex;
                     justify-content: center;
 
-                    &:hover {
-                        font-weight: bold;
-                        background: linear-gradient(193.33deg, #9356DC -11.44%, #FF79DA 123.93%);
-                        @include webkit;
-                        animation: like 3.2s;
+                    .two {
+                        position: absolute;
+                        opacity: 0;
+                        transition: all 1.2s;
+
+                        &:hover {
+                            opacity: 1;
+                            color: transparent;
+                            background: linear-gradient(193.33deg, #9356DC -11.44%, #FF79DA 123.93%);
+                            @include webkit;
                         }
+
+                        &:not(:hover) {
+                            opacity: 0;
+                            background: linear-gradient(193.33deg, #9356DC -11.44%, #FF79DA 123.93%);
+                            @include webkit;
+                        }
+                    }
                 }
             }
         }

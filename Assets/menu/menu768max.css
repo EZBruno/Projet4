@@ -4,14 +4,6 @@ body {
   background: #F6F6F6;
 }
 
-@keyframes like {
-  from {
-    opacity: 0.2;
-  }
-  to {
-    opacity: 1;
-  }
-}
 @keyframes test {
   0% {
     opacity: 0;
@@ -79,15 +71,27 @@ body {
     align-items: center;
     white-space: nowrap;
   }
-  main .maintitle h1 .fa-heart {
+  main .maintitle h1 .heart {
     font-size: 22px;
     width: 24px;
     display: flex;
     justify-content: center;
   }
-  main .maintitle h1 .fa-heart:active {
-    animation: like 2s;
-    font-weight: bold;
+  main .maintitle h1 .heart .two {
+    position: absolute;
+    opacity: 0;
+    transition: all 1.2s;
+  }
+  main .maintitle h1 .heart .two:active {
+    opacity: 1;
+    color: transparent;
+    background: linear-gradient(193.33deg, #9356DC -11.44%, #FF79DA 123.93%);
+    -webkit-background-clip: text; /* Limiter le dégradé au texte */
+    -webkit-text-fill-color: transparent; /* Rendre le texte transparent */
+    background-clip: text;
+  }
+  main .maintitle h1 .heart .two:not(:active) {
+    opacity: 0;
     background: linear-gradient(193.33deg, #9356DC -11.44%, #FF79DA 123.93%);
     -webkit-background-clip: text; /* Limiter le dégradé au texte */
     -webkit-text-fill-color: transparent; /* Rendre le texte transparent */
