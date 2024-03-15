@@ -64,8 +64,9 @@ body {
         display: flex;
         justify-content: center;
         align-items: center;
-        height: 100%;
+        height:100%;
         width: 100%;
+        max-width: 1920px;
         
           .loader {
               z-index: 9999;
