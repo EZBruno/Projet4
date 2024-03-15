@@ -1,25 +1,7 @@
-body {
-    font-family: 'Roboto', sans-serif;
-    background: #F6F6F6;
-}
-
 @mixin webkit {
     -webkit-background-clip: text;        /* Limiter le dégradé au texte */
     -webkit-text-fill-color: transparent; /* Rendre le texte transparent */
-     background-clip: text;
 }
-
-@keyframes like {
-
-    from {
-        opacity: 0.2;
-    }
-
-    to {
-        opacity: 1;
-    }
-}
-
 
 @keyframes test {
     0% {
@@ -31,8 +13,37 @@ body {
     }
 }
 
+@keyframes opac {
 
-@media only screen and (max-width: 768px) {
+    from {
+        opacity: 1;
+    }
+
+    to {
+        opacity: 0.8;
+    }
+    
+}
+
+@keyframes unopac {
+
+    from {
+        opacity: 0.8;
+    }
+
+    to {
+        opacity: 1;
+    }
+    
+}
+
+body {
+
+    font-family: 'Roboto', sans-serif;
+    background: #F6F6F6;
+    position: absolute;
+    width: 100%;
+    height: 100%;
     
     header {
         display: flex;
@@ -102,20 +113,30 @@ body {
                 align-items: center;
                 white-space: nowrap;
 
-                .fa-heart {
+                .heart {
                     font-size: 22px;
                     width: 24px;
                     display: flex;
                     justify-content: center;
 
-                    
-                     &:active {
-                         animation: like 2s;
-                         font-weight: bold;
-                         background: linear-gradient(193.33deg, #9356DC -11.44%, #FF79DA 123.93%);
-                         @include webkit;                
-                         }   
-    
+                    .two {
+                        position: absolute;
+                        opacity: 0;
+                        transition: all 1.2s;
+
+                        &:active {
+                            opacity: 1;
+                            color: transparent;
+                            background: linear-gradient(193.33deg, #9356DC -11.44%, #FF79DA 123.93%);
+                            @include webkit;
+                        }
+
+                        &:not(:active) {
+                            opacity: 0;
+                            background: linear-gradient(193.33deg, #9356DC -11.44%, #FF79DA 123.93%);
+                            @include webkit;
+                        }
+                    }
                 }
             }
         }
@@ -223,7 +244,7 @@ body {
                 }
 
 
-                &:active {
+                &:hover {
 
                     .btn {
                         margin-right: 0;
@@ -258,13 +279,18 @@ body {
             display: flex;
             align-items: center;
             justify-content: center;
-            transition: all 0.3s;
+            transition: all 0.4s;
 
             &:active {
                 transform: scale(1.01) translate(1px, 0.7px);
-                transition: transform 0.3s ease-out;
+                transition: transform 400ms ease-out;
                 box-shadow: 0px 5px 12px 0px rgba(0, 0, 0, 0.25);
+                animation: opac 400ms forwards;
                 opacity: 0.8;
+            }
+
+            &:not(:active) {
+                animation: unopac 4s forwards;
             }
         }
 
@@ -320,5 +346,4 @@ body {
         }
     
     }
-    
 }

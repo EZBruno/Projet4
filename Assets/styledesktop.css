@@ -1,0 +1,174 @@
+@charset "UTF-8";
+@media only screen and (min-width: 769px) {
+  html {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  html body {
+    max-width: 1920px;
+  }
+  html body header {
+    height: 146px;
+    display: flex;
+  }
+  html body header .imgh {
+    height: 96px;
+  }
+  html body header .imgh img {
+    top: 30px;
+  }
+  html body main {
+    height: initial;
+  }
+  html body main .firstparty {
+    height: 179px;
+    margin: 33px 0;
+    width: 100%;
+    justify-content: space-between;
+  }
+  html body main .firstparty h1 {
+    font-size: 40px;
+    line-height: 40px;
+    position: relative;
+    top: initial;
+  }
+  html body main .firstparty p {
+    position: relative;
+    top: initial;
+  }
+  html body main .firstparty .restaubtn {
+    position: relative;
+    top: initial;
+  }
+  html body main .fonct {
+    position: relative;
+    top: initial;
+    height: 228.38px;
+    gap: 25px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+  }
+  html body main .fonct h2 {
+    position: relative;
+    top: initial;
+    width: 275px;
+    left: 12.5%;
+  }
+  html body main .fonct__menu {
+    height: 72.38px;
+    position: sticky;
+    left: 13.37%;
+    gap: 25px;
+  }
+  html body main .fonct__bal1, html body main .fonct__bal2, html body main .fonct__bal3 {
+    position: relative;
+    top: initial;
+    width: 23.26%;
+  }
+  html body main .fonct__bal1 .num, html body main .fonct__bal2 .num, html body main .fonct__bal3 .num {
+    right: 44px;
+  }
+  html body main .fonct__bal1:hover i, html body main .fonct__bal2:hover i, html body main .fonct__bal3:hover i {
+    color: #9356DC;
+  }
+  html body main .restaurantsection {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    height: 608px;
+    gap: 28px;
+    padding: 28px 0;
+  }
+  html body main .restaurantsection .title {
+    position: relative;
+    top: initial;
+    left: 12.5%;
+    height: 28px;
+  }
+  html body main .restaurantsection .resto {
+    display: flex;
+    position: relative;
+    top: initial;
+    left: 12.5%;
+    width: 75%;
+    height: 552px;
+    gap: 50px;
+  }
+  html body main .restaurantsection .resto__flex {
+    display: flex;
+    flex-direction: row;
+    height: 251px;
+    gap: 100px;
+  }
+  html body main .restaurantsection .resto__cont {
+    display: flex;
+    flex-direction: column;
+  }
+  html body main .restaurantsection .resto__cont .newheart .two:hover {
+    opacity: 1;
+    color: transparent;
+    background: linear-gradient(193.33deg, #9356DC -11.44%, #FF79DA 123.93%);
+    -webkit-background-clip: text; /* Limitez le dégradé au texte */
+    -webkit-text-fill-color: transparent; /* Rendez le texte transparent */
+  }
+  html body main .restaurantsection .resto__cont .newheart .two:not(:hover) {
+    opacity: 0;
+    background: linear-gradient(193.33deg, #9356DC -11.44%, #FF79DA 123.93%);
+    -webkit-background-clip: text; /* Limitez le dégradé au texte */
+    -webkit-text-fill-color: transparent; /* Rendez le texte transparent */
+  }
+  html body main .restaurantsection .resto__cont .heart .two:hover {
+    opacity: 1;
+    color: transparent;
+    background: linear-gradient(193.33deg, #9356DC -11.44%, #FF79DA 123.93%);
+    -webkit-background-clip: text; /* Limitez le dégradé au texte */
+    -webkit-text-fill-color: transparent; /* Rendez le texte transparent */
+  }
+  html body main .restaurantsection .resto__cont .heart .two:not(:hover) {
+    opacity: 0;
+    background: linear-gradient(193.33deg, #9356DC -11.44%, #FF79DA 123.93%);
+    -webkit-background-clip: text; /* Limitez le dégradé au texte */
+    -webkit-text-fill-color: transparent; /* Rendez le texte transparent */
+  }
+  html body footer {
+    position: initial;
+    height: 54px;
+    width: 100%;
+    flex-direction: row-reverse;
+    align-items: flex-end;
+    justify-content: flex-start;
+    padding: 30px 0;
+  }
+  html body footer h1 {
+    position: relative;
+    right: 25px;
+  }
+  html body footer div {
+    height: 54px;
+    align-items: flex-end;
+    flex-direction: row;
+    position: relative;
+    right: 25px;
+  }
+  html body footer div .i {
+    width: 190px;
+    height: 19px;
+  }
+  html body footer div .p {
+    width: 60px;
+    height: 17px;
+  }
+  html body footer div .p1 {
+    width: 130px;
+  }
+  html body footer div .fa-utensils {
+    font-size: 12px;
+  }
+  html body footer div .fa-handshake {
+    font-size: 12.5px;
+  }
+}
+
+/*# sourceMappingURL=style768min.css.map */
